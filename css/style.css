@@ -53,7 +53,7 @@ h1 {
   color: #000000;
   font-size: 2rem;
   font-family: "Bad Script", cursive;
-  font-weight: 400;
+  font-weight: 600;
   font-style: normal;
   position: relative;
   padding-left: 0.1em;
@@ -131,7 +131,7 @@ a {
     justify-content: space-evenly;
     align-items: center;
   }
-  
+
 }
 
 @media screen and (max-width: 992px) {
@@ -149,13 +149,16 @@ a {
     right: 0;
     top: 0;
   }
+
   .topnav a:not(:first-child) {
     display: none;
   }
+
   .topnav a.icon {
     float: right;
     display: block;
   }
+
   .topnav.responsive .menu-items {
     display: flex;
     flex-direction: column;
@@ -196,6 +199,7 @@ a {
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
   overflow: hidden;
 }
+
 .card img {
   width: 250px;
 }
@@ -270,13 +274,13 @@ button:hover {
   margin-bottom: 60px;
 }
 
-.principal_title > h3 {
+.principal_title>h3 {
   color: #000000;
   margin: 0;
   font-size: 40px;
 }
 
-.principal_title > p {
+.principal_title>p {
   color: #ff3333;
   font-size: 16px;
 }
@@ -416,6 +420,7 @@ footer {
     display: flex;
     margin: 0 0 90px 20px;
   }
+
   .card {
     width: 150px;
     height: 150px;
@@ -466,7 +471,7 @@ footer {
     flex-direction: column;
   }
 
-  .main_menu_footer > li {
+  .main_menu_footer>li {
     margin-bottom: 11px;
   }
 
