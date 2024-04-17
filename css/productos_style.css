@@ -4,12 +4,16 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
   /*  border: 1px solid red; */
 }
 
 :root {
   width: 100%;
   overflow-x: hidden;
+  scroll-behavior: smooth;
+
+
 }
 
 body {
@@ -25,7 +29,32 @@ body {
   background-repeat: no-repeat;
   color: #ffffff;
   font-family: "Overlock", sans-serif;
+
+
 }
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 2;
+  border: none;
+  outline: none;
+  background-color: grey;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 600;
+
+}
+
+#myBtn:hover {
+  background-color: #f85656;
+}
+
 
 /* Dispositivos pequeños */
 @media screen and (max-width: 690px) {
@@ -85,7 +114,7 @@ body {
   }
 
   .info-product {
-    padding: 10px 20px;
+    padding: 10px 10px;
     line-height: 1;
     display: block;
     flex-direction: column;
@@ -96,7 +125,7 @@ body {
   #modal {
     border-radius: 7px;
     width: 90%;
-    height: 40%;
+    height: 20%;
     top: 30vh;
     left: 5vw;
 
