@@ -358,7 +358,7 @@ button:hover {
 
 .postBody__content {
   color: #57727c;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .postBody__date {
@@ -421,6 +421,7 @@ footer {
     margin: 0 0 90px 20px;
   }
 
+
   .card {
     width: 150px;
     height: 150px;
@@ -464,6 +465,10 @@ footer {
     justify-content: center;
     align-items: center;
   }
+
+  .postBody__content {
+  font-size: 12px;
+}
 
   .main_menu_footer,
   .social {
