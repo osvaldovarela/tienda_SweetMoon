@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+
+    <link rel="shortcut icon" href="./img/logo/logo.ico" />
+    <link rel="stylesheet" href="./css/productos_style.css">
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./css/ContactoForm.css">
+    <title>Productos - Tienda Sweet Moon</title>
+</head>
+
+<body>
+    <!--Inicio Header -->
+    <header class="header_main">
+        <div class="container_header">
+            <div class="menu_desktop">
+                <div class="limite_menu">
+                    <div class="logo">
+                        <a href="./index.html">
+                            <img src="./img/logo/logo.png" alt="logo" />
+                        </a>
+                        <h1>Sweet Moon</h1>
+                    </div>
+                    <div class="nav">
+                        <ul class="main_menu">
+                            <li style="margin-right: 11px !important">
+                                <a href="./index.html">Inicio</a>
+                            </li>
+                            <li style="margin-right: 11px !important">
+                                <a href="./aboutme.html">Sobre mí</a>
+                            </li>
+                            <li style="margin-right: 11px !important">
+                                <a href="./productos.html">Productos</a>
+                            </li>
+                            <li style="margin-right: 11px !important">
+                                <a href="#">Contacto</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <!-- Pedido -->
+                    <div class="buy_btn" style="margin-left: 50px !important">
+                        <span>
+                            <i class="fa fa-shopping-cart fs-18 m-r-10" aria-hidden="true" title="Carrito"></i>
+                            <a href="#">Pedido</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Fin Header-->
+
+    <!-- Inicio form contacto -->
+   
+    <div class="container-items">
+	<div class="formulario">			
+      <h1>Formulario de contacto</h1>
+				<h3>Contactate con nosotros</h3>
+
+
+					<form  method="post">				
+
+						
+								<p>
+									<label for="nombre" class="colocar_nombre">Nombre
+										<span class="obligatorio">*</span>
+									</label>
+										<input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Nombre">
+								</p>
+							
+								<p>
+									<label for="email" class="colocar_email">Email
+										<span class="obligatorio">*</span>
+									</label>
+										<input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Mail">
+								</p>
+						
+								<p>
+									<label for="telefono" class="colocar_telefono">Teléfono
+									</label>
+										<input type="tel" name="introducir_telefono" id="telefono" placeholder="Teléfono">
+								</p>		
+							
+									
+							
+								
+							
+								<p>
+									<label for="mensaje" class="colocar_mensaje">Mensaje
+										<span class="obligatorio">*</span>
+									</label>                     
+                               		  <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
+                               	</p>	  								
+							
+								<button class="button" type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
+
+								<p class="aviso">
+									<span class="obligatorio"> * </span>los campos son obligatorios.
+								</p>					
+						
+					</form>
+		</div>	
+	</div>
+
+
+    
+    <!-- Emergente -->
+    <dialog id="modal">
+        <h2>Producto Añadido</h2>
+        <svg xmlns="http://www.w3.org/2000/svg" height="50" width="50"
+            viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+            <path fill="#63E6BE"
+                d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-111 111-47-47c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l64 64c9.4 9.4 24.6 9.4 33.9 0L369 209z" />
+        </svg>
+        <p>El producto ha sido añadido correctamente al carrito</p>
+        <button id="btn-cerrar-modal" type="button" onclick="window.modal.close();">Cerrar</button>
+    </dialog>
+
+    <!-- fin Emergente -->
+
+    <!--  Footer -->
+    <footer class="footer">
+        <div class="footer_nav">
+            <ul class="main_menu">
+                <li style="margin-right: 11px !important">
+                    <a href="/index.html">Inicio</a>
+                </li>
+                <li style="margin-right: 11px !important">
+                    <a href="./aboutme.html">Sobre mí</a>
+                </li>
+                <li style="margin-right: 11px !important">
+                    <a href="/productos.html">Productos</a>
+                </li>
+                <li style="margin-right: 11px !important">
+                    <a href="./Contacto.html">Contacto</a>
+                </li>
+            </ul>
+            <a href="https://www.instagram.com/sweetmoon_cake2/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-whatsapp"></i></a>
+
+            <p class="copy">© Codo a Codo 2024</p>
+        </div>
+    </footer>
+    <!-- Fin  footer-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="./app/main.js"></script>
+</body>
+
+</html>
