@@ -31,9 +31,6 @@ function scrollFunction() {
 
 function irArriba() {
   document.body.scrollTop = 0; //para navegadores: Safari
-  document.body.style.scrollBehavior = "smooth";
-  document.documentElement.scrollTop = 0; // Para navegadores: Chrome, Firefox, IE and Opera
-  document.documentElement.style.scrollBehavior = "smooth";
 
-  // window.scrollTo({ top: 0, behavior: "smooth" });
+  document.documentElement.scrollTop = 0; // Para navegadores: Chrome, Firefox, IE and Opera
 }
