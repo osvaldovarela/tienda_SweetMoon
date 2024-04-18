@@ -11,6 +11,7 @@
 
 :root {
     width: 100%;
+
     overflow-x: hidden;
 }
 
@@ -50,6 +51,7 @@ body {
     border-radius: .4em;
     font-size: 1.3em;
     font-weight: 600;
+    overflow: hidden;
 }
 
 #myBtn:hover {
@@ -128,7 +130,7 @@ p.price {
 #modal {
     border-radius: .5em;
     width: 80vw;
-    height: 50vh;
+    height: 55vh;
     top: 10vh;
     left: 8vw;
     padding-top: .7em;
@@ -212,10 +214,10 @@ p.price {
     #modal {
         border-radius: .5em;
         width: 40vw;
-        height: 80%;
+        height: 70%;
         top: 33vh;
         left: 30vw;
-        padding-top: .8em;
+        padding: .8em;
         display: flexbox;
         flex-direction: column;
         justify-content: center;
@@ -249,18 +251,19 @@ p.price {
         padding-right: .8rem;
     }
 
-    /* #modal {
+    #modal {
         border-radius: .5em;
-        width: 40%;
-        height: 30%;
+        font-size: small;
+        width: 40vw;
+        height: 55vh;
         top: 33vh;
         left: 30vw;
-        padding-top: 1.5em;
+        padding: 1em;
         display: flexbox;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        flex-wrap: wrap;
+        flex-wrap: no-wrap;
         text-align: center;
     }
 
@@ -271,8 +274,9 @@ p.price {
         padding: .3em .7em;
         border: none;
         outline: none;
+
+        /* font-size: inherit;*/
     }
-        /* font-size: inherit; */
 
 }
 
@@ -289,16 +293,16 @@ p.price {
 
     #modal {
         border-radius: .5em;
-        width: 40%;
-        height: 40%;
+        width: 40vw;
+        height: 40vh;
         top: 33vh;
         left: 30vw;
-        padding-top: 1.5em;
+        padding: 1em;
         display: flexbox;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        flex-wrap: wrap;
+        flex-wrap: no-wrap;
         text-align: center;
     }
 
