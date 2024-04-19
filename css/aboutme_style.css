@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Bad+Script&family=Overlock:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  width: 100%;
+  overflow-x: hidden;  
+}
+
+body {
+  /* background-image: url("./img/logo/Icono-transparente.png"); */
+  /* Reemplaza 'fondo.jpg' con la ruta de tu imagen de fondo */
+  background-image: linear-gradient(to left top, #f6bdc0, #f3cad7, #eed8e7, #ede6ef, #f2f2f2);
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: repeat;
+  color: #ffffff;
+  font-family: "Overlock", sans-serif;
+}
+
+.contenedor::before {
+  content: "Marca de Agua";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3em;
+
+  opacity: 0.3;
+  /* Ajusta la opacidad según tus preferencias */
+  z-index: -1;
+  /* Para que la marca de agua esté detrás del contenido */
+}
+
+@media screen and (min-width: 490px) and (max-width: 992px) {
+  .post {
+    display: flex;
+    margin: 0 0 90px 20px;
+  }
+  .card {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  html {
+    font-size: smaller;
+  }
+
+  .card-container {
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+    justify-items: center;
+  }
+
+  .post {
+    display: flex;
+    flex-direction: column;
+    margin: 0 -10px 115px 15px;
+  }
+
+  .postBody {
+    padding: 0 35px;
+  }
+
+  .postUser {
+    display: flex;
+    margin-top: 30px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .postUser__name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main_menu_footer,
+  .social {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main_menu_footer > li {
+    margin-bottom: 11px;
+  }
+
+  footer .copyright {
+    margin-bottom: 0.3rem;
+  }
+
+  .fa-instagram,
+  .fa-facebook,
+  .fa-whatsapp {
+    color: #666666;
+    padding-bottom: 0.5em;
+    font-size: 1.5em;
+  }
+}
+
+
+/* ====== Estilos para aboutme ===== */
+
+.aboutme {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    font-size: 44px;
+}
+
+.bio {
+    display: flex;
+    flex-direction: column;
+}
+
+p {
+    color: black;
+}
