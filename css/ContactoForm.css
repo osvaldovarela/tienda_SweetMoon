@@ -10,13 +10,13 @@ body{
 
 .contact_form{	
 	width: 460px; 
-  height: auto;
-  margin: 80px auto;
+  	height: auto;
+ 	margin: 80px auto;
 	border-radius: 10px;  
 	padding-top: 30px;
 	padding-bottom: 20px;  
-  background-color: #fbfbfb; 
-  padding-left: 30px; 
+  	background-color: #fbfbfb; 
+  	padding-left: 30px; 
 }
 
 
@@ -30,12 +30,12 @@ input{
 	border-color: #F8b195; 
 	margin-top: 10px;  
 	padding-left: 10px;
-  margin-bottom: 20px; 
+  	margin-bottom: 20px; 
 }
 
 
 textarea{
-  background-color: #fbfbfb; 
+  	background-color: #fbfbfb; 
 	width: 405px; 
 	height: 150px; 
 	border-radius: 5px;  
@@ -44,27 +44,24 @@ textarea{
 	border-color: #F8b195; 
 	margin-top: 10px;  
 	padding-left: 10px;
-  margin-bottom: 20px; 
-  padding-top: 15px; 
+  	margin-bottom: 20px; 
+  	padding-top: 15px; 
 }
 
 
 label{
-  display: block; 
+  	display: block; 
 	float: center; 	
 }
 
 
 button{
-	
-	
 	text-transform: uppercase;
 	background-color: #F8b195; 
 	border-color: #F8b195; 
 	border-style: solid; 
-	border-radius: 10px;	
-	
-  cursor: pointer;
+	border-radius: 10px;		
+  	cursor: pointer;
   
   
 }
@@ -78,31 +75,20 @@ button p{
 	color: #fff; 
 }
 
+h3{
+	color: #0e0e0e;
+	font-size: 18px;
+}
 
-span{
+/*span{
 	color: #F8b195; 
 }
 
-
+*/
 .aviso{
 	font-size: 13px;  
 	color: #0e0e0e;  
 }
-
-
-h1{
-	font-size: 39px;  
-	text-align: left; 
-	padding-bottom: 20px; 
-	
-}
-
-
-h3{
-	font-size: 16px; 
-	padding-bottom: 30px;
-}
-
 
 
 p{
