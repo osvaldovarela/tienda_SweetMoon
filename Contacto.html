@@ -19,6 +19,7 @@
 </head>
 
 <body>
+  <script src="./js/script.js"></script>
   <!--Inicio Header -->
   <div class="topnav" id="myTopnav">
     <a href="" class="logo" class="active"><img src="./img/logo/logo.png" alt="logo" /></a>
@@ -42,9 +43,29 @@
   <!-- Inicio form contacto -->
 
   <div class="container-items">
+    <div class="ubicacion">
+      <h1> Dónde estamos</h1>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3271.403140866686!2d-57.957165224985815!3d-34.92142507434518!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2e62e3fc93575%3A0x6ffaec3bf616e000!2sPlaza%20Moreno!5e0!3m2!1ses-419!2sar!4v1713810102512!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      
+      <p>
+        <ul class="contacto-items">
+          <li>Te esperamos de Lunes a Sabados de 10 a 13 y de 15 a 18 hs.</li>
+          <li>1122334455</li>
+          <li>info@gmail.com</li>
+          <li>Plaza Moreno 1234 - La Plata</li>
+        </ul>
+        
+
+ 
+ 
+ 
+      </p>
+
+    </div>
     <div class="formulario">
-      <h1>Formulario de contacto</h1>
-      <h3>Contactate con nosotros</h3>
+      
+      <h1>Dejanos tu mensaje</h1>
+      
 
 
       <form method="post">
@@ -56,6 +77,18 @@
           </label>
           <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Nombre">
         </p>
+        
+        <label>Motivo</label>
+        <select name="select">
+          <option value="value1">Consulta</option>
+          <option value="value2">Pedido</option>
+          <option value="value3">Queja/Sugerencia</option>
+        </select>
+
+        <label><input type="checkbox" id="cbox1" value="first_checkbox" /> check 1</label><br />
+
+      <input type="checkbox" id="cbox2" value="second_checkbox" />
+      <label for="cbox2">check 2</label>
 
         <p>
           <label for="email" class="colocar_email">Email
