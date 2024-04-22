@@ -20,6 +20,11 @@ body{
   	padding-left: 30px; 
 }
 
+.contacto-items{
+	font-size: 14px; 
+	color: #0e0e0e; 
+
+}
 
 input{
 	background-color: #fbfbfb; 
@@ -52,7 +57,10 @@ textarea{
 
 label{
   	display: block; 
-	float: center; 	
+	float: center; 
+	font-size: 14px; 
+	color: #0e0e0e; 
+		
 }
 
 
