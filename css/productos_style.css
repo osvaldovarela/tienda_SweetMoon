@@ -69,7 +69,7 @@ body {
 }
 
 .info-product {
-    padding: .7em;
+    padding: .8em;
     line-height: 0;
     width: 100%;
     display: inline-flex;
@@ -82,7 +82,7 @@ body {
 p.price {
     color: black;
     font-weight: bolder;
-    padding-left: 1em;
+    padding: .5em;
     font-size: 2rem;
 }
 
@@ -91,6 +91,7 @@ p.price {
 
 .item figure {
     overflow: hidden;
+    border-radius: .5em;
 }
 
 .item:hover img {
@@ -129,11 +130,14 @@ p.price {
 /* ===== PopUp ===== */
 #modal {
     border-radius: .5em;
-    width: 80vw;
-    height: 55vh;
-    top: 10vh;
-    left: 8vw;
-    padding-top: .7em;
+    width: max-content;
+    height: max-content;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: .7em;
+
     display: flexbox;
     flex-direction: column;
     justify-content: center;
@@ -142,9 +146,10 @@ p.price {
     text-align: center;
 }
 
+
 #modal button {
     background-color: #f7a17f;
-    border-radius: .3em;
+    border-radius: .5em;
     font-size: 1em;
     color: aliceblue;
     padding: .5em;
@@ -157,7 +162,6 @@ p.price {
     background-color: rgba(0, 0, 0, .80);
 
 }
-
 
 /* animacion del icono en el pop-up */
 #modal svg {
@@ -211,31 +215,6 @@ p.price {
         padding-right: .8rem;
     }
 
-    #modal {
-        border-radius: .5em;
-        width: 40vw;
-        height: 70%;
-        top: 33vh;
-        left: 30vw;
-        padding: .8em;
-        display: flexbox;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        text-align: center;
-    }
-
-    #modal button {
-        background-color: #f7a17f;
-        border-radius: .3em;
-        color: aliceblue;
-        padding: .3em .7em;
-        border: none;
-        outline: none;
-
-        /* font-size: inherit; */
-    }
 }
 
 @media only screen and (min-width: 480px) and (max-width: 768px) {}
@@ -251,32 +230,6 @@ p.price {
         padding-right: .8rem;
     }
 
-    #modal {
-        border-radius: .5em;
-        font-size: small;
-        width: 40vw;
-        height: 55vh;
-        top: 33vh;
-        left: 30vw;
-        padding: 1em;
-        display: flexbox;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: no-wrap;
-        text-align: center;
-    }
-
-    #modal button {
-        background-color: #f7a17f;
-        border-radius: 5px;
-        color: aliceblue;
-        padding: .3em .7em;
-        border: none;
-        outline: none;
-
-        /* font-size: inherit;*/
-    }
 
 }
 
@@ -290,31 +243,5 @@ p.price {
         padding-right: .8rem;
     }
 
-
-    #modal {
-        border-radius: .5em;
-        width: 40vw;
-        height: 40vh;
-        top: 33vh;
-        left: 30vw;
-        padding: 1em;
-        display: flexbox;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: no-wrap;
-        text-align: center;
-    }
-
-    #modal button {
-        background-color: #f7a17f;
-        border-radius: 5px;
-        color: aliceblue;
-        padding: .3em .7em;
-        border: none;
-        outline: none;
-
-        /* font-size: inherit;     */
-    }
 
 }
