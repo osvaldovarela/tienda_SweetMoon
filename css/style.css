@@ -405,15 +405,15 @@ footer {
   margin-right: 15px;
 }
 
-.fa-instagram,
+
+
+/* .fa-instagram,
 .fa-facebook,
 .fa-whatsapp {
   color: #666666;
   padding-left: 0.25em;
   font-size: 1.5em;
-}
-
-/* ====== Fin footer ====== */
+}====== Fin footer ====== */
 
 @media screen and (min-width: 490px) and (max-width: 992px) {
   .post {
