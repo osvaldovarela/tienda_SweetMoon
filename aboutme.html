@@ -9,17 +9,15 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
 
+
   <link rel="shortcut icon" href="./img/logo/logo.ico" />
-  <link rel="stylesheet" href="./css/productos_style.css">
   <link rel="stylesheet" href="./css/style.css" />
-  <link rel="stylesheet" href="./css/ContactoForm.css">
+  <link rel="stylesheet" href="./css/aboutme_style.css">
 
-
-  <title>Productos - Tienda Sweet Moon</title>
+  <title>Acerca de mí - Tienda Sweet Moon</title>
 </head>
 
 <body>
-  <script src="./js/script.js"></script>
   <!--Inicio Header -->
   <div class="topnav" id="myTopnav">
     <a href="" class="logo" class="active"><img src="./img/logo/logo.png" alt="logo" /></a>
@@ -39,100 +37,32 @@
     </a>
   </div>
   <!-- Fin Header-->
+  <!-- Inicio About me -->
 
-  <!-- Inicio form contacto -->
-
-  <div class="container-items">
-    <div class="ubicacion">
-      <h1> Dónde estamos</h1>
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3271.403140866686!2d-57.957165224985815!3d-34.92142507434518!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2e62e3fc93575%3A0x6ffaec3bf616e000!2sPlaza%20Moreno!5e0!3m2!1ses-419!2sar!4v1713810102512!5m2!1ses-419!2sar"
-        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-      <p>
-      <ul class="contacto-items">
-        <li>Te esperamos de Lunes a Sabados de 10 a 13 y de 15 a 18 hs.</li>
-        <li>1122334455</li>
-        <li>info@gmail.com</li>
-        <li>Plaza Moreno 1234 - La Plata</li>
-      </ul>
-
-
-
-
-
-      </p>
-
+  <body>
+    <div class="aboutme">
+      <h2 class="title">Un poco de Sweet</h2>
+      <div class="bio">
+        <h2>¿Quién está detrás de ésta pastelería? - Mi historia</h2>
+        <p>Mi nombre es Fiorela Palacios, nací el 26 de marzo de 2003 y soy pastelera profesional.</p>
+        <p>De chica me interesaba mucho el periodismo deportivo y, a su vez, me gustaba mucho cocinar. Cuando terminé el
+          secundario, empecé la universidad orientada a periodismo. Con el paso del tiempo, sentí que no era a lo que
+          quería dedicarme toda mi vida, no quería pasar 8 horas de mi día en una oficina.</p>
+        <p>Finalmente, decidí que mi pasión por la cocina es más grande que cualquier otra cosa y me dediqué a la
+          pastelería. Me apasiona cocinar, ya sea dulce o salado, aunque lo dulce es más apetitoso (en mi opinión). La
+          pastelería es por y para lo que vivo. Amo hacer postres, tortas, amo ver que otros disfrutan lo que hago.</p>
+        <p>Empecé estudiando Pastelería y Panadería en la Escuela de Gastronomía (EAG) en mayo del 2022 mientras que, a
+          la par, trabajaba de atención al cliente en una franquicia gastronómica. Un año después, finalicé mis estudios
+          y empecé a desarrollarme en el ámbito de la pastelería como profesional.
+        <p>Unos meses después de recibirme, tuve la oportunidad de desarrollarme como Jefa de Pastelería en un bar. Esto
+          conllevó a generar buenas experiencias y a tener mucha que manejar mucha responsabilidad.</p>
+        <p>Actualmente trabjo como pastelera en la Confitería La Ideal, la cual tiene como Jefe de Pastelería a Gustavo
+          Nari, un gran cocinero y pastelero.</p>
+        <p>Además, en el 2024 me recibí de Licenciada en Gerenciamiento Gastronómica, con el objetivo de, a largo plazo,
+          abrir mi propia pastelería.</p>
+      </div>
     </div>
-    <div class="formulario">
-
-      <h1>Dejanos tu mensaje</h1>
-
-
-
-      <form method="post">
-
-
-        <p>
-          <label for="nombre" class="colocar_nombre">Nombre
-            <span class="obligatorio">*</span>
-          </label>
-          <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Nombre">
-        </p>
-
-        <label>Motivo</label>
-        <select name="select">
-          <option value="value1">Consulta</option>
-          <option value="value2">Pedido</option>
-          <option value="value3">Queja/Sugerencia</option>
-        </select>
-
-        <label><input type="checkbox" id="cbox1" value="first_checkbox" /> check 1</label><br />
-
-        <input type="checkbox" id="cbox2" value="second_checkbox" />
-        <label for="cbox2">check 2</label>
-
-        <p>
-          <label for="email" class="colocar_email">Email
-            <span class="obligatorio">*</span>
-          </label>
-          <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Mail">
-        </p>
-
-        <p>
-          <label for="telefono" class="colocar_telefono">Teléfono
-          </label>
-          <input type="tel" name="introducir_telefono" id="telefono" placeholder="Teléfono">
-        </p>
-
-
-
-
-
-        <p>
-          <label for="mensaje" class="colocar_mensaje">Mensaje
-            <span class="obligatorio">*</span>
-          </label>
-          <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio"
-            placeholder="Deja aquí tu comentario..."></textarea>
-        </p>
-
-        <button type="submit" name="enviar_formulario" id="enviar">
-          <p>Enviar</p>
-        </button>
-
-        <p class="aviso">
-          <span class="obligatorio"> * </span>los campos son obligatorios.
-        </p>
-
-      </form>
-    </div>
-  </div>
-
-
-  <!-- Fin  form contacto -->
-
+  </body>
 
   <!--  Footer -->
   <footer>
@@ -167,7 +97,6 @@
       </div>
     </div>
   </footer>
-
   <!-- Fin  footer-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
