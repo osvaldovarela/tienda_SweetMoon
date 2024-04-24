@@ -128,14 +128,16 @@ p.price {
 
 /* ===== PopUp ===== */
 #modal {
+
     border-radius: .5rem;
     width: max-content;
     height: max-content;
     position: fixed;
     top: 50vh;
     left: 50vw;
+    transform: translate(-50%, -50%);
     padding: .7rem;
-    display: flexbox;
+    /* display: flex; */
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -152,7 +154,6 @@ p.price {
     padding: .5rem;
     border: none;
     outline: none;
-    /* font-size: inherit; */
 }
 
 #modal::backdrop {
@@ -200,10 +201,6 @@ p.price {
         padding-right: .8rem;
     }
 
-    #modal {
-        top: 25vh;
-        left: 8vw;
-    }
 
 }
 
@@ -217,18 +214,9 @@ p.price {
         padding-right: .8rem;
     }
 
-    #modal {
-        top: 30vh;
-        left: 20vw;
-    }
 }
 
-@media only screen and (min-width: 480px) and (max-width: 768px) {
-    #modal {
-        top: 30vh;
-        left: 30vw;
-    }
-}
+@media only screen and (min-width: 480px) and (max-width: 768px) {}
 
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
@@ -241,10 +229,10 @@ p.price {
         padding-right: .8rem;
     }
 
-    #modal {
+    /* #modal {
         top: 30vh;
         left: 30vw;
-    }
+    } */
 
 
 }
@@ -259,9 +247,5 @@ p.price {
         padding-right: .8rem;
     }
 
-    #modal {
-        top: 30vh;
-        left: 40vw;
-    }
 
 }
