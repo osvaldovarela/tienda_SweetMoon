@@ -1,7 +1,4 @@
-//  por el momento no fue necesario usar js
-//  queda el archivo para futuras mejoras
-//  se agrego la llamada en el tag onclick="window.modal.showModal()"
-//  y onclick="window.modal.close()"
+//funcion de manejo de menu hamburguesa
 
 function myFunction() {
   var x = document.getElementById("myTopnav");
