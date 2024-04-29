@@ -1,15 +1,80 @@
-@import url(https://fonts.googleapis.com/css?family=Noto+Sans);
+body {
+    
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right top, #f9dbcf, #f9dfd5, #f9e3da, #f8e7e0, #f8ebe6);
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    font-family: "Overlock", sans-serif;
+	
 
+}
 
+.TituloForm{
+	text-align: center;
+	font-size: 22px;
+	color: #ffffff;
+	padding-left: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: #F8b195;
+	border-radius: 10px;
+	width: 50%;
+	margin: 20px auto;
+}
 
-/*body{
-	height: 100%; 
-	font-family: 'Noto Sans', sans-serif;
+.containerform {
+	/* Por defecto en modo fila, uno al lado del otro */
+	display: flex;
+	flex-flow: row;
+	width: 100%;
+	padding-top: 20px;
+	padding-left: 20px;
+	background-color: #fbfbfb;
+  }
   
-}*/
+  .itemform1 {
+	flex: 1 1 auto;  
+	width: 50%;
+	 
+  	height: auto;
+	  margin: 20px auto;
+	border-radius: 10px;  
+	padding-top: 30px;
+	padding-bottom: 20px; 
+	padding-right: 30px; 
+  	background-color: #fbfbfb; 
+  	padding-left: 30px; 
+	
+	
+	
+  }
 
-*/
-.contact_form{	
+  .itemform2 {
+	flex: 1 1 auto;  
+	text-align: center;
+	padding: 20px;
+	
+  }
+
+  .itemform3 {
+	flex: 1 1 auto;  
+	text-align: center;
+	padding: 20px;
+	
+  }
+  
+  @media (max-width: 750px) {
+	.containerform {
+	  /* si es muy angosta, uno debajo del otro */
+	  flex-flow: column;
+	}
+  }
+
+ /* .contact_form{	
 	width: 460px; 
   	height: auto;
  	margin: 80px auto;
@@ -18,17 +83,18 @@
 	padding-bottom: 20px;  
   	background-color: #fbfbfb; 
   	padding-left: 30px; 
-}
+}*/
 
 .contacto-items{
 	font-size: 14px; 
 	color: #0e0e0e; 
+	list-style-type: none;
 
 }
 
 input{
 	background-color: #fbfbfb; 
-	width: 408px; 
+	width: 100%; 
 	height: 40px; 
 	border-radius: 5px;  
 	border-style: solid; 
@@ -42,8 +108,8 @@ input{
 
 textarea{
   	background-color: #fbfbfb; 
-	width: 405px; 
-	height: 150px; 
+	  width: 100%; 
+	  /*height: 40px; */ 
 	border-radius: 5px;  
 	border-style: solid; 
 	border-width: 1px; 
@@ -58,12 +124,54 @@ textarea{
 label{
   	display: block; 
 	float: center; 
-	font-size: 14px; 
+	font-size: 16px; 
 	color: #0e0e0e; 
 		
 }
 
+.selector{
+	background-color: #fbfbfb; 
+	border-color: #F8b195; 
+	border-color: #F8b195; 
+	border-style: solid; 
+	border-radius: 10px;
+	height: 40px;
+}
 
+.checkbox{
+	background-color: #fbfbfb; 
+	border-color: #F8b195;
+	border-color: #F8b195; 
+	border-style: solid; 
+	border-radius: 10px;
+	width: 14px;
+	height: 14px;
+	color: #f3b977;
+}
+
+/*.checkbox input:checked + span:after{
+	content: "\2713";
+	display: block;
+	width: 9px;
+	height: 15px;
+	font-size: 11px;
+	color: #ffffff;
+}
+
+.checkbox input:checked + span {
+	background-color: #000000;
+}
+
+.checkbox span:before{
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	border-radius: 3%;
+	background-color: #d7ccc9;
+}
+*/
 button{
 	text-transform: uppercase;
 	background-color: #F8b195; 
@@ -71,6 +179,9 @@ button{
 	border-style: solid; 
 	border-radius: 10px;		
   	cursor: pointer;
+	padding: 5px;
+	
+	text-align: center;
   
   
 }
@@ -82,48 +193,82 @@ button{
 
 button p{
 	color: #fff; 
+	
 }
 
-h3{
-	color: #0e0e0e;
-	font-size: 18px;
-}
+.contacto-items{
+	text-align: center;
+	font-size: 18px; 
+	color: #0e0e0e; 
 
-/*span{
-	color: #F8b195; 
 }
-
-*/
 .aviso{
 	font-size: 13px;  
 	color: #0e0e0e;  
 }
 
-
-p{
-	font-size: 14px; 
-	color: #0e0e0e; 
-}
-
-
 ::-webkit-input-placeholder {
- color: #a8a8a8;
-}
+	color: #a8a8a8;
+   }
+   
+   
+   ::-webkit-textarea-placeholder {
+	color: #a8a8a8;
+   }
+   
+   
+   .formulario input:focus{
+	   outline:0;
+	   border: 1px solid #f3b977;
+   }
+   
+   
+   .formulario textarea:focus{
+	   outline:0;
+	   border: 1px solid #f3b977;
+   }
+   
+  
 
 
-::-webkit-textarea-placeholder {
- color: #a8a8a8;
-}
+/*.maincontainerform
+  margin: 20px auto
+  max-width: 900px
+  background-color: grey
+  height: 100%
+  overflow: hidden
 
+.blockdiv
+  background-color: steelblue
+  width: 31.33%
+  height: 150px
+  float: left
+  margin: 1%
+  +box-sizing(border-box)
+  */
+  
+/*@media screen and (max-width:640px)
+  .blockdiv
+    background-color: blue
+    width: 47.9%
+  
+    &:first-child
+      width: 98%
+      background-color: red
+      clear: both
+  
+    &:last-child
+      width: 98%
+      background-color: darkgreen
+      clear: both
+  
+  @media screen and (max-width:320px)
+    .blockdiv
+      width: 98%
+	  */
 
-.formulario input:focus{
-	outline:0;
-	border: 1px solid #f3b977;
-}
-
-
-.formulario textarea:focus{
-	outline:0;
-	border: 1px solid #f3b977;
-}
-
+	  .fa-instagram,
+	  .fa-location-dot,
+	  .fa-envelope{
+		color: #666666;
+	  }
