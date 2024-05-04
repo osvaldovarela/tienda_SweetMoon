@@ -1,200 +1,271 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <link rel="shortcut icon" href="./img/logo/logo.ico" />
+    <!-- <link rel="stylesheet" href="./css/productos_style.css" /> -->
+    <link rel="stylesheet" href="./css/style.css"/>
 
+    <title>Tienda Sweet Moon</title>
+  </head>
 
-  <link rel="shortcut icon" href="./img/logo/logo.ico" />
-  <link rel="stylesheet" href="./css/productos_style.css">
-  <link rel="stylesheet" href="./css/style.css" />
-
-  <title>Tienda Sweet Moon</title>
-</head>
-
-<body>
-  <!--Inicio Header -->
-  <div class="topnav" id="myTopnav">
-    <a href="" class="logo" class="active"><img src="./img/logo/logo.png" alt="logo" /></a>
-    <a href="" class="active">
-      <h1>Sweet Moon</h1>
-    </a>
-    <div class="menu-items">
-      <a href="./index.html" class="active">Home</a>
-      <a href="./aboutme.html">Acerca de mí</a>
-      <a href="./productos.html">Productos</a>
-      <a href="./Contacto.html">Contacto</a>
-      <a id="pedido" href="#">Pedido
-        <i class="fa fa-shopping-cart" aria-hidden="true" title="Carrito"></i></a>
-    </div>
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-      <i class="fa fa-bars"></i>
-    </a>
-  </div>
-  <!-- Fin Header-->
-
-  <!-- Boton de Ir Arriba -->
-  <button onclick="irArriba()" id="myBtn" title="Arriba"><i class="fa fa-arrow-circle-up"
-      aria-hidden="true"></i></button>
-  <!-- Fin Boton de Ir Arriba -->
-
-  <!-- Inicio Carrousel -->
-
-  <div id="carouselExampleIndicators" class="carousel slide">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-        aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-        aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-        aria-label="Slide 3"></button>
-    </div>
-
-    <!-- Imágenes -->
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="./img/productos/postres/slide1.jpg" class="d-block w-100" alt="..." />
+  <body>
+    <!--Inicio Header -->
+    <div class="topnav" id="myTopnav">
+      <a href="" class="logo" class="active"
+        ><img src="./img/logo/logo.png" alt="logo"
+      /></a>
+      <a href="" class="active">
+        <h1>Sweet Moon</h1>
+      </a>
+      <div class="menu-items">
+        <a href="./index.html" class="active">Home</a>
+        <a href="./aboutme.html">Acerca de mí</a>
+        <a href="./productos.html">Productos</a>
+        <a href="./Contacto.html">Contacto</a>
+        <a id="pedido" href="#"
+          >Pedido
+          <i class="fa fa-shopping-cart" aria-hidden="true" title="Carrito"></i
+        ></a>
       </div>
-      <div class="carousel-item">
-        <img src="./img/productos/postres/slide2.jpg" class="d-block w-100" alt="..." />
-      </div>
-      <div class="carousel-item">
-        <img src="./img/productos/postres/slide3.jpg" class="d-block w-100" alt="..." />
-      </div>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-      data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
+    <!-- Fin Header-->
+
+    <!-- Boton de Ir Arriba -->
+
+    <button onclick="irArriba()" id="myBtn" title="Arriba">
+      <i class="fa fa-arrow-circle-up" aria-hidden="true"></i>
     </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-      data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
 
-  <!-- Fin  Carrousel -->
+    <!-- Fin Boton de Ir Arriba -->
 
-  <!-- Inicio contenido ppal -->
+    <!-- Inicio contenido ppal -->
 
-  <main>
-    <!-- Sección de Productos -->
+    <!-- Inicio Carrousel -->
 
-    <div class="principal_title">
-      <h3>Vení a conocer</h3>
-      <p>nuestra tienda</p>
-    </div>
-
-    <section class="card-container">
-      <div class="card">
-        <img src="./img/productos/postres/1.jpg" alt="" />
+    <div id="carouselExampleIndicators" class="carousel slide">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
       </div>
-      <div class="card">
-        <img src="./img/productos/postres/2.jpg" alt="" />
+
+      <!-- Imágenes -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="./img/productos/postres/slide1.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="./img/productos/postres/slide2.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="./img/productos/postres/slide3.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
       </div>
-      <div class="card">
-        <img src="./img/productos/postres/3.jpg" alt="" />
-      </div>
-      <div class="card">
-        <img src="./img/productos/postres/4.jpg" alt="" />
-      </div>
-    </section>
-    <div class="container_button">
-      <button class="tienda_button">
-        <a href="./productos.html">ver más</a>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
       </button>
     </div>
 
-    <!-- Testimonios -->
+    <!-- Fin  Carrousel -->
 
-    <div class="principal_title">
-      <h3>Testimonios</h3>
-      <p>de nuestros clientes</p>
-    </div>
-    <div class="post">
-      <!-- usuario 1 -->
-      <div class="postUser">
-        <div class="postUser__portrait">
-          <img class="user" src="./img/clientes/testimonials-1.jpg" alt="testimonial_user" />
-          <!-- <span class="icon fa fa-user-circle-o"></span> -->
-        </div>
-        <div class="postUser__name">Pablo R.</div>
-      </div>
-      <div class="postBody">
-        <div class="postBody__content">
-          I built a tree house out of reclaimed cedar and gave it a coat of my
-          home-made organic coffee-based varnish. Tree housewarming party this
-          weekend!
-        </div>
-        <div class="postBody__date"></div>
-      </div>
-      <!-- usuario 2 -->
-      <div class="postUser">
-        <div class="postUser__portrait">
-          <img class="grid-item" src="./img/clientes/testimonials-2.jpg" alt="" />
-          <!-- <span class="icon fa fa-user-circle-o"></span> -->
-        </div>
-        <div class="postUser__name">Mariana S.</div>
-      </div>
-      <div class="postBody">
-        <div class="postBody__content">
-          I built a tree house out of reclaimed cedar and gave it a coat of my
-          home-made organic coffee-based varnish. Tree housewarming party this
-          weekend!
-        </div>
-        <div class="postBody__date"></div>
-      </div>
-    </div>
-  </main>
+    <main>
+      <!-- Sección de Productos -->
 
-  <!-- Fin contenido ppal -->
+      <div class="principal_title">
+        <h3>Vení a conocer</h3>
+        <p>nuestra tienda</p>
+      </div>
 
-  <!-- Inicio Footer -->
+      <section class="card-container">
+        <div class="card">
+          <img src="./img/productos/postres/1.jpg" alt="" />
+        </div>
+        <div class="card">
+          <img src="./img/productos/postres/2.jpg" alt="" />
+        </div>
+        <div class="card">
+          <img src="./img/productos/postres/3.jpg" alt="" />
+        </div>
+        <div class="card">
+          <img src="./img/productos/postres/4.jpg" alt="" />
+        </div>
+      </section>
+      <div class="container_button">
+        <button class="tienda_button">
+          <a href="./productos.html">ver más</a>
+        </button>
+      </div>
 
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="footer_nav">
-            <ul class="main_menu_footer">
-              <li style="margin-right: 11px !important">
-                <a href="./index.html">Home</a>
-              </li>
-              <li style="margin-right: 11px !important">
-                <a href="./aboutme.html">Acerca de mí</a>
-              </li>
-              <li style="margin-right: 11px !important">
-                <a href="./productos.html">Productos</a>
-              </li>
-              <li style="margin-right: 11px !important">
-                <a href="./Contacto.html">Contacto</a>
-              </li>
-            </ul>
-            <div class="social">
-              <a href="https://www.instagram.com/sweetmoon_cake2/" target="_blank"><i class="fab fa-instagram"></i></a>
-              <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
-              <a href="#" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      <!-- Video -->
+
+      <div class="container_video">
+        <video
+          class="video"
+          src="./video/7279911-uhd_4096_2160_24fps.mp4"
+          muted
+          autoplay
+        ></video>
+      </div>
+
+      <!-- Testimonios -->
+
+      <div class="principal_title">
+        <h3>Testimonios</h3>
+        <p>de nuestros clientes</p>
+      </div>
+      <div class="post">
+        <!-- usuario 1 -->
+        <div class="postUser">
+          <div class="postUser__portrait">
+            <img
+              class="user"
+              src="./img/clientes/testimonials-1.jpg"
+              alt="testimonial_user"
+            />
+            <!-- <span class="icon fa fa-user-circle-o"></span> -->
+          </div>
+          <div class="postUser__name">Pablo R.</div>
+        </div>
+        <div class="postBody">
+          <div class="postBody__content">
+            "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi
+            quaerat qui repudiandae, temporibus quos quas expedita optio commodi
+            explicabo dolorum corporis"
+          </div>
+          <div class="postBody__date"></div>
+        </div>
+        <!-- usuario 2 -->
+        <div class="postUser">
+          <div class="postUser__portrait">
+            <img
+              class="grid-item"
+              src="./img/clientes/testimonials-2.jpg"
+              alt=""
+            />
+            <!-- <span class="icon fa fa-user-circle-o"></span> -->
+          </div>
+          <div class="postUser__name">Mariana S.</div>
+        </div>
+        <div class="postBody">
+          <div class="postBody__content">
+            "Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Exercitationem iure laborum dolorem fugiat, itaque, dicta deserunt
+            repellat excepturi odio, dolorum numquam!"
+          </div>
+          <div class="postBody__date"></div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Fin contenido ppal -->
+
+    <!-- Inicio Footer -->
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="footer_nav">
+              <ul class="main_menu_footer">
+                <li style="margin-right: 11px !important">
+                  <a href="./index.html">Home</a>
+                </li>
+                <li style="margin-right: 11px !important">
+                  <a href="./aboutme.html">Acerca de mí</a>
+                </li>
+                <li style="margin-right: 11px !important">
+                  <a href="./productos.html">Productos</a>
+                </li>
+                <li style="margin-right: 11px !important">
+                  <a href="./Contacto.html">Contacto</a>
+                </li>
+              </ul>
+              <div class="social">
+                <a
+                  href="https://www.instagram.com/sweetmoon_cake2/"
+                  target="_blank"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-whatsapp"></i></a>
+              </div>
+            </div>
+            <div class="copyright-box">
+              <p class="copyright">© Codo a Codo 2024</p>
             </div>
           </div>
-          <div class="copyright-box">
-            <p class="copyright">© Codo a Codo 2024</p>
-          </div>
         </div>
       </div>
-    </div>
-  </footer>
+    </footer>
 
-  <!-- Fin  footer-->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
-  <script src="./js/main.js"></script>
-</body>
-
+    <!-- Fin  footer-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/main.js"></script>
+  </body>
 </html>
