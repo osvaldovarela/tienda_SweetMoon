@@ -1,15 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Bad+Script&family=Overlock:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap");
 
+/* ==== General ====*/
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /*  border: 1px solid red; */
+   /* border: 1px solid red; */
 }
 
 :root {
   width: 100%;
-  overflow-x: hidden;
+  
 }
 
 body {
@@ -24,6 +26,7 @@ body {
   background-repeat: no-repeat;
   color: #ffffff;
   font-family: "Overlock", sans-serif;
+  overflow-x: hidden;
 }
 
 .contenedor::before {
@@ -75,8 +78,6 @@ a {
   font-weight: bold;
 }
 
-/* Mobile */
-
 .topnav {
   overflow: hidden;
   background-color: #333333;
@@ -122,59 +123,12 @@ a {
   margin-left: 30px;
 }
 
-/* media */
-
-@media screen and (min-width: 1080px) {
-  .topnav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-  }
-}
-
-@media screen and (max-width: 992px) {
-  .topnav {
-    position: relative;
-  }
-
-  .card {
-    width: 250px;
-    height: 250px;
-  }
-
-  .topnav.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-
-  .topnav a:not(:first-child) {
-    display: none;
-  }
-
-  .topnav a.icon {
-    float: right;
-    display: block;
-  }
-
-  .topnav.responsive .menu-items {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 100%;
-  }
-
-  .topnav.responsive .menu-items a {
-    display: block;
-    text-align: center;
-    padding: 12px 14px;
-  }
-}
-
 /* ====== Fin Header ======*/
 
-/*  ====== Inicio sección Hero ====== */
+/* ===== Inicio Contenido Ppal ====*/
+
+/* ----carousel---- */
+
 .carousel-item {
   /*  height: 65vh;
   min-height: 300px; */
@@ -185,11 +139,46 @@ a {
   background-size: cover;
 }
 
-/*  ====== Fin sección Hero ====== */
+/*---Boton de Ir Arriba---*/
 
-/* Inicio Contenido Ppal */
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 1vh;
+  right: 4vw;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #535252;
+  color: white;
+  cursor: pointer;
+  padding: 0.5em;
+  border-radius: 0.4em;
+  font-size: 1.3em;
+  font-weight: 600;
+  overflow: hidden;
+}
 
-/*  Sección de Productos */
+#myBtn:hover {
+  background-color: #f85656;
+}
+
+/* ---video--- */
+
+.container_video {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: -50px;
+}
+.video {
+  max-width: 70%;
+  height: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+/* ----Sección de Productos---- */
 
 .card {
   width: 250px;
@@ -226,7 +215,7 @@ a {
   box-sizing: border-box;
   color: #ffffff;
   display: flex;
-  font-family: Phantomsans, sans-serif;
+  font-family: "Overlock", sans-serif;
   font-size: 18px;
   justify-content: center;
   line-height: 1em;
@@ -265,7 +254,7 @@ button:hover {
   transform: scale(0.9);
 }
 
-/* Testimonios */
+/* ----Testimonios---- */
 
 .principal_title {
   text-align: center;
@@ -334,7 +323,7 @@ button:hover {
   right: 100%;
   top: 35px;
   border: solid transparent;
-  content: " ";
+  /* content: " "; */
   height: 0;
   width: 0;
   position: absolute;
@@ -358,6 +347,7 @@ button:hover {
 .postBody__content {
   color: #57727c;
   font-size: 14px;
+  text-align: center;
 }
 
 .postBody__date {
@@ -368,9 +358,9 @@ button:hover {
   letter-spacing: 1px;
 }
 
-/* Fin Contenido Ppal */
+/* ====== Fin Contenido Ppal ====== */
 
-/* ====== Inicio Footer ======*/
+/* ====== Inicio Footer ====== */
 
 footer {
   text-align: center;
@@ -404,15 +394,65 @@ footer {
   margin-right: 15px;
 }
 
-
-
-/* .fa-instagram,
+.fa-instagram,
 .fa-facebook,
 .fa-whatsapp {
   color: #666666;
   padding-left: 0.25em;
   font-size: 1.5em;
-}====== Fin footer ====== */
+}
+
+/* ====== Fin footer ======  */
+
+/* ======= media ======= */
+
+@media screen and (min-width: 1080px) {
+  .topnav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .topnav {
+    position: relative;
+  }
+
+  .card {
+    width: 250px;
+    height: 250px;
+  }
+
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+
+  .topnav.responsive .menu-items {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .topnav.responsive .menu-items a {
+    display: block;
+    text-align: center;
+    padding: 12px 14px;
+  }
+}
 
 @media screen and (min-width: 490px) and (max-width: 992px) {
   .post {
@@ -448,6 +488,7 @@ footer {
     display: flex;
     flex-direction: column;
     margin: 0 -10px 115px 15px;
+    max-width: 325px;
   }
 
   .postBody {
