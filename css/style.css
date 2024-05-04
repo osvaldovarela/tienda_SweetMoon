@@ -6,12 +6,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-   /* border: 1px solid red; */
+  /* border: 1px solid red; */
 }
 
 :root {
   width: 100%;
-  
 }
 
 body {
@@ -309,7 +308,8 @@ button:hover {
   text-align: center;
 }
 
-.postBody {
+.postBody1,
+.postBody2 {
   flex: 1 1 0%;
   position: relative;
   padding: 15px;
@@ -318,8 +318,10 @@ button:hover {
   margin-right: 25px;
 }
 
-.postBody:after,
-.postBody:before {
+.postBody1:after,
+.postBody1:before,
+.postBody2:after,
+.postBody2:before {
   right: 100%;
   top: 35px;
   border: solid transparent;
@@ -330,14 +332,16 @@ button:hover {
   pointer-events: none;
 }
 
-.postBody:after {
+.postBody1:after,
+.postBody2:after {
   border-color: transparent;
   border-right-color: #ffffff;
   border-width: 8px;
   margin-top: -8px;
 }
 
-.postBody:before {
+.postBody1:before,
+.postBody2:before {
   border-color: transparent;
   border-right-color: #cad0d2;
   border-width: 9px;
@@ -487,12 +491,20 @@ footer {
   .post {
     display: flex;
     flex-direction: column;
-    margin: 0 -10px 115px 15px;
-    max-width: 325px;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    /* margin: 0 -10px 115px 110px; */
   }
 
-  .postBody {
+  .postBody1 {
     padding: 0 35px;
+    margin: 0 15px;
+  }
+
+  .postBody2 {
+    padding: 0 35px;
+    margin: 0px 15px 115px;
   }
 
   .postUser {
@@ -501,6 +513,17 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+
+  .postUser__portrait {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100px;
+    height: 90px;
+    font-size: 70px;
+    line-height: 0;
   }
 
   .postUser__name {
