@@ -17,10 +17,7 @@ body {
   /* background: linear-gradient(220.55deg, #8fff85 0%, #39a0ff 100%); */
   position: relative;
   width: 100%;
-  height: 100vh;
-  background-image: url("./img/logo/Icono-transparente.png");
-  /* Reemplaza 'fondo.jpg' con la ruta de tu imagen de fondo */
-
+  height: 100%;
   background-size: cover;
   background-repeat: no-repeat;
   color: #ffffff;
@@ -171,7 +168,7 @@ a {
   margin-bottom: -50px;
 }
 .video {
-  max-width: 70%;
+  max-width: 50%;
   height: auto;
   margin-top: 50px;
   margin-bottom: 50px;
@@ -448,7 +445,6 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 100%;
   }
 
   .topnav.responsive .menu-items a {
@@ -459,6 +455,11 @@ footer {
 }
 
 @media screen and (min-width: 490px) and (max-width: 992px) {
+  .topnav {
+    position: relative;
+    justify-content: space-between;
+  }
+
   .post {
     display: flex;
     margin: 0 0 90px 20px;
@@ -478,6 +479,10 @@ footer {
   .tienda_button a {
     font-size: 14px;
     padding: 7px 15px;
+  }
+
+  .video {
+  max-width: 70%;
   }
 
   .card-container {
