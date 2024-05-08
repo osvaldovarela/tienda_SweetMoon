@@ -26,7 +26,7 @@
   <script src="./js/script.js"></script>
   <!--Inicio Header -->
   <div class="topnav" id="myTopnav">
-    <a href="" class="logo" class="active"><img src="./img/logo/logo.png" alt="logo"/></a>
+    <a href="index.html" class="logo" class="active"><img src="./img/logo/logo.png" alt="logo"/></a>
     <a href="" class="active">
       <h1>Sweet Moon</h1>
     </a>
@@ -67,12 +67,19 @@
       <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Nombre">
     </p>
 
-    <label>
-        <input type="checkbox" id="cbox1" value="first_checkbox" class="checkbox"/> Buenos Aires
-        <input type="checkbox" id="cbox2" value="second_checkbox" class="checkbox"/> Interior
+    <!--
+      <input type="checkbox" id="cbox1" value="first_checkbox" class="checkbox"/> Buenos Aires
+      <input type="checkbox" id="cbox2" value="second_checkbox" class="checkbox"/> Interior
    
+    -->
+    <div id="inputPreview">
+      <input name="cssCheckbox" id="demo_opt_1" type="checkbox" class="css-checkbox">
+      <label for="demo_opt_1">Buenos Aires</label>
 
-      </label>
+      <input name="cssCheckbox" id="demo_opt_2" type="checkbox" class="css-checkbox" checked="">
+      <label for="demo_opt_2">Interior</label>
+      
+    </div>
     
 
       
@@ -128,31 +135,31 @@
     <div class="itemform2">
 
       <ul>
-      <li><img src="./img/logo/logo.png" alt="logo"/></li>
+        <li><img src="./img/logo/logo.png" alt="logo" class="imglogo"/></li>
       
       
-      <li class="contacto-items">
+        <li class="contacto-items">
         <p>
           <i class="fa-regular fa-clock"></i>
           Lunes a Sabados de 10 a 13 y de 15 a 18 hs.<br>
         </p>
-      </li>
+        </li>
      
-      <li class="contacto-items">
+        <li class="contacto-items">
         <p>
         <i class="fa-solid fa-phone"></i>
          1122334455 <br>
         </p>
-          </li>
+        </li>
           
-      <li class="contacto-items">
+        <li class="contacto-items">
         
         <p>
         <i class="fa-regular fa-envelope"></i>
             info@gmail.com <br>
           </p>
-      </li>
-          <li class="contacto-items">
+        </li>
+        <li class="contacto-items">
             <i class="fa-solid fa-location-dot"></i>
           Plaza Moreno 1234 - La Plata
         </li>
@@ -166,7 +173,7 @@
     <div class="itemform3">
       <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3271.403140866686!2d-57.957165224985815!3d-34.92142507434518!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2e62e3fc93575%3A0x6ffaec3bf616e000!2sPlaza%20Moreno!5e0!3m2!1ses-419!2sar!4v1713810102512!5m2!1ses-419!2sar"
-            width="500" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+            width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
 
