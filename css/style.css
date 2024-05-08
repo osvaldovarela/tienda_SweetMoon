@@ -1,29 +1,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Bad+Script&family=Overlock:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap");
 
+/* ==== General ====*/
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /*  border: 1px solid red; */
+  /* border: 1px solid red; */
 }
 
 :root {
   width: 100%;
-  overflow-x: hidden;
 }
 
 body {
   /* background: linear-gradient(220.55deg, #8fff85 0%, #39a0ff 100%); */
   position: relative;
   width: 100%;
-  height: 100vh;
-  background-image: url("./img/logo/Icono-transparente.png");
-  /* Reemplaza 'fondo.jpg' con la ruta de tu imagen de fondo */
-
+  height: 100%;
   background-size: cover;
   background-repeat: no-repeat;
   color: #ffffff;
   font-family: "Overlock", sans-serif;
+  overflow-x: hidden;
 }
 
 .contenedor::before {
@@ -75,8 +74,6 @@ a {
   font-weight: bold;
 }
 
-/* Mobile */
-
 .topnav {
   overflow: hidden;
   background-color: #333333;
@@ -122,59 +119,12 @@ a {
   margin-left: 30px;
 }
 
-/* media */
-
-@media screen and (min-width: 1080px) {
-  .topnav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-  }
-}
-
-@media screen and (max-width: 992px) {
-  .topnav {
-    position: relative;
-  }
-
-  .card {
-    width: 250px;
-    height: 250px;
-  }
-
-  .topnav.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-
-  .topnav a:not(:first-child) {
-    display: none;
-  }
-
-  .topnav a.icon {
-    float: right;
-    display: block;
-  }
-
-  .topnav.responsive .menu-items {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 100%;
-  }
-
-  .topnav.responsive .menu-items a {
-    display: block;
-    text-align: center;
-    padding: 12px 14px;
-  }
-}
-
 /* ====== Fin Header ======*/
 
-/*  ====== Inicio sección Hero ====== */
+/* ===== Inicio Contenido Ppal ====*/
+
+/* ----carousel---- */
+
 .carousel-item {
   /*  height: 65vh;
   min-height: 300px; */
@@ -185,11 +135,46 @@ a {
   background-size: cover;
 }
 
-/*  ====== Fin sección Hero ====== */
+/*---Boton de Ir Arriba---*/
 
-/* Inicio Contenido Ppal */
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 1vh;
+  right: 4vw;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #535252;
+  color: white;
+  cursor: pointer;
+  padding: 0.5em;
+  border-radius: 0.4em;
+  font-size: 1.3em;
+  font-weight: 600;
+  overflow: hidden;
+}
 
-/*  Sección de Productos */
+#myBtn:hover {
+  background-color: #f85656;
+}
+
+/* ---video--- */
+
+.container_video {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: -50px;
+}
+.video {
+  max-width: 50%;
+  height: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+/* ----Sección de Productos---- */
 
 .card {
   width: 250px;
@@ -226,7 +211,7 @@ a {
   box-sizing: border-box;
   color: #ffffff;
   display: flex;
-  font-family: Phantomsans, sans-serif;
+  font-family: "Overlock", sans-serif;
   font-size: 18px;
   justify-content: center;
   line-height: 1em;
@@ -265,7 +250,7 @@ button:hover {
   transform: scale(0.9);
 }
 
-/* Testimonios */
+/* ----Testimonios---- */
 
 .principal_title {
   text-align: center;
@@ -320,7 +305,8 @@ button:hover {
   text-align: center;
 }
 
-.postBody {
+.postBody1,
+.postBody2 {
   flex: 1 1 0%;
   position: relative;
   padding: 15px;
@@ -329,26 +315,30 @@ button:hover {
   margin-right: 25px;
 }
 
-.postBody:after,
-.postBody:before {
+.postBody1:after,
+.postBody1:before,
+.postBody2:after,
+.postBody2:before {
   right: 100%;
   top: 35px;
   border: solid transparent;
-  content: " ";
+  /* content: " "; */
   height: 0;
   width: 0;
   position: absolute;
   pointer-events: none;
 }
 
-.postBody:after {
+.postBody1:after,
+.postBody2:after {
   border-color: transparent;
   border-right-color: #ffffff;
   border-width: 8px;
   margin-top: -8px;
 }
 
-.postBody:before {
+.postBody1:before,
+.postBody2:before {
   border-color: transparent;
   border-right-color: #cad0d2;
   border-width: 9px;
@@ -358,6 +348,7 @@ button:hover {
 .postBody__content {
   color: #57727c;
   font-size: 14px;
+  text-align: center;
 }
 
 .postBody__date {
@@ -368,9 +359,9 @@ button:hover {
   letter-spacing: 1px;
 }
 
-/* Fin Contenido Ppal */
+/* ====== Fin Contenido Ppal ====== */
 
-/* ====== Inicio Footer ======*/
+/* ====== Inicio Footer ====== */
 
 footer {
   text-align: center;
@@ -404,17 +395,71 @@ footer {
   margin-right: 15px;
 }
 
-
-
-/* .fa-instagram,
+.fa-instagram,
 .fa-facebook,
 .fa-whatsapp {
   color: #666666;
   padding-left: 0.25em;
   font-size: 1.5em;
-}====== Fin footer ====== */
+}
+
+/* ====== Fin footer ======  */
+
+/* ======= media ======= */
+
+@media screen and (min-width: 1080px) {
+  .topnav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .topnav {
+    position: relative;
+  }
+
+  .card {
+    width: 250px;
+    height: 250px;
+  }
+
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+
+  .topnav.responsive .menu-items {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .topnav.responsive .menu-items a {
+    display: block;
+    text-align: center;
+    padding: 12px 14px;
+  }
+}
 
 @media screen and (min-width: 490px) and (max-width: 992px) {
+  .topnav {
+    position: relative;
+    justify-content: space-between;
+  }
+
   .post {
     display: flex;
     margin: 0 0 90px 20px;
@@ -436,6 +481,10 @@ footer {
     padding: 7px 15px;
   }
 
+  .video {
+  max-width: 70%;
+  }
+
   .card-container {
     height: auto;
     display: grid;
@@ -447,11 +496,20 @@ footer {
   .post {
     display: flex;
     flex-direction: column;
-    margin: 0 -10px 115px 15px;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    /* margin: 0 -10px 115px 110px; */
   }
 
-  .postBody {
+  .postBody1 {
     padding: 0 35px;
+    margin: 0 15px;
+  }
+
+  .postBody2 {
+    padding: 0 35px;
+    margin: 0px 15px 115px;
   }
 
   .postUser {
@@ -460,6 +518,17 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+
+  .postUser__portrait {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100px;
+    height: 90px;
+    font-size: 70px;
+    line-height: 0;
   }
 
   .postUser__name {
