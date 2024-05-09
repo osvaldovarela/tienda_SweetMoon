@@ -23,7 +23,11 @@ body {
     position: relative;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(to right top, #f9dbcf, #f9dfd5, #f9e3da, #f8e7e0, #f8ebe6);
+    /* background-color: #f9f6ee; */
+    background-image: linear-gradient(to right top, #f9f6ee, #f9f6eb, #faf5e8, #faf5e6, #faf4e3);
+    /* background-image: linear-gradient(to right top, #fefeeb, #fdfae7, #fbf7e3, #faf3e0, #f9efdc); */
+    /* background-image: linear-gradient(to left bottom, #fcf5e5, #fdf5e2, #fef5e0, #fef4dd, #fff4da); */
+    ;
     /* background-image: url("./img/logo/Icono-transparente.png"); */
     /* Reemplaza 'fondo.jpg' con la ruta de tu imagen de fondo */
 

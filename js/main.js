@@ -31,3 +31,20 @@ function irArriba() {
 
   document.documentElement.scrollTop = 0; // Para navegadores: Chrome, Firefox, IE and Opera
 }
+
+// funcion para mostrar el modal al presionar el boton añadir
+//lista de todos los botones para añadir
+const btns_add_item = document.querySelectorAll(".add-product");
+
+const closeModal = document.querySelector("#btn-cerrar-modal");
+
+// Iteramos sobre cada botón y agregamos el event listener
+btns_add_item.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    window.modal.show();
+  });
+});
+
+closeModal.addEventListener("click", () => {
+  window.modal.close();
+});
