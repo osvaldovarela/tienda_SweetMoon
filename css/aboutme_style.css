@@ -179,3 +179,134 @@ body {
 p {
     color: black;
 }
+
+/* media querys */
+
+@media only screen and (max-width: 320px) {
+  .aboutme {
+    font-size: 16px;
+  }
+
+  .fotos {
+    width: 100%;
+    height: auto;
+    padding: 5px;
+  }
+
+  .foto2 {
+    width: 75%;
+    height: 270px;
+  }
+
+  .p1F, .p2F, .p3F {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .p1, .p2, .p3 {
+    padding: 0;
+    text-align: center;
+  }
+
+  .title {
+    font-size: 32px;
+  }
+
+  .bio {
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) and (orientation: landscape) {
+  .aboutme {
+    font-size: 16px;
+  }
+
+  .fotos {
+    width: 100%;
+    height: auto;
+    padding: 5px;
+  }
+
+  .foto2 {
+    width: 70%;
+    height: 300px;
+  }
+
+  .p1F, .p2F, .p3F {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .p1, .p2, .p3 {
+    padding: 0 15px;
+    text-align: center;
+  }
+
+  .title {
+    font-size: 32px;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+  .aboutme {
+    font-size: 18px;
+    padding: 10px;
+  }
+
+  .fotos {
+    width: 100%;
+    height: auto;
+    padding: 5px;
+  }
+
+  .foto2 {
+    width: 75%;
+    height: 500px;
+  }
+
+  .p1F, .p2F, .p3F {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .p1, .p2, .p3 {
+    padding: 0 15px;
+    text-align: center;
+  }
+
+  .title {
+    font-size: 36px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .aboutme {
+    font-size: 18px;
+    padding: 10px;
+  }
+
+  .fotos {
+    width: 100%;
+    height: auto;
+    padding: 5px;
+  }
+
+  .foto2 {
+    width: 80%;
+    height: 600px;
+  }
+
+  .p1F, .p2F, .p3F {
+    flex-direction: column;
+    align-items: center;
+  }
+  .p1, .p2, .p3 {
+    padding: 0 15px;
+    text-align: center;
+  }
+
+  .title {
+    font-size: 36px;
+  }
+}
