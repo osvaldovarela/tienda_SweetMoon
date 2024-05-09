@@ -12,14 +12,13 @@
 }
 
 body {
-  /* background-image: url("./img/logo/Icono-transparente.png"); */
-  /* Reemplaza 'fondo.jpg' con la ruta de tu imagen de fondo */
-  background-image: linear-gradient(to left top, #f6bdc0, #f3cad7, #eed8e7, #ede6ef, #f2f2f2);
+  background-color: #fcf5e5;
+  /* background-image: linear-gradient(to left top, #f6bdc0, #f3cad7, #eed8e7, #ede6ef, #f2f2f2); */
   position: relative;
   width: 100%;
   height: 100%;
-  background-size: cover;
-  background-repeat: repeat;
+  /* background-size: cover;
+  background-repeat: repeat; */
   color: #ffffff;
   font-family: "Overlock", sans-serif;
 }
