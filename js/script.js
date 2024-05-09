@@ -1,30 +1,33 @@
-
+let envio = [];
 
 const form = document.querySelector(".form");
-const nombre = document.querySelector("#nombre");
-
-
+const nombre = document.querySelector("#firstname");
 
 form.addEventListener("submit", (event) => {
-    event.preventDefault();
+  event.preventDefault();
 
-    const title = nombre.value.trim();
+  const title = firstname.value.trim();
 
-    if(title.lenght >=3 ){
-      const task = {
-        
-        title,
-        complete: false,
-      };
-    }else {
-        const error = document.querySelector(".error");
-        error.textContent = "Debe ingresar 3 caracteres o mas";
-
-        setTimeout(() => {
-          error.textContent = "";
-        }, 2000);
+  if (title.length >= 3) {
     
+    const task = {
+      id: Date.now(),
+      title,
+      complete: false,
     };
-   
-  
+
+    envio.push(task);
+
+
+    firstname.value = "";
+
+ 
+  } else {
+    const error = document.querySelector(".error");
+    error.textContent = "Debe ingresar 3 caracteres o mas";
+
+    setTimeout(() => {
+      error.textContent = "";
+    }, 2000);
+  }
 });
