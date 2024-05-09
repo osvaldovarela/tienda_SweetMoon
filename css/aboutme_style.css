@@ -194,8 +194,8 @@ p {
   }
 
   .foto2 {
-    width: 75%;
-    height: 270px;
+    width: auto;
+    height: auto;
   }
 
   .p1F, .p2F, .p3F {
@@ -229,8 +229,8 @@ p {
   }
 
   .foto2 {
-    width: 70%;
-    height: 300px;
+    width: auto;
+    height: auto;
   }
 
   .p1F, .p2F, .p3F {
@@ -261,8 +261,8 @@ p {
   }
 
   .foto2 {
-    width: 75%;
-    height: 500px;
+    width: auto;
+    height: auto;
   }
 
   .p1F, .p2F, .p3F {
@@ -293,8 +293,8 @@ p {
   }
 
   .foto2 {
-    width: 80%;
-    height: 600px;
+    width: auto;
+    height: auto;
   }
 
   .p1F, .p2F, .p3F {
