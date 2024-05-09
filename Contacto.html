@@ -62,16 +62,15 @@
   <h1 class="TituloForm">CONTACTANOS</h1>
 
   <!-- Inicio formulario item 1-->
+  
 
   <div class="itemform1">
     
-    <form class="form">
+    <form class="form" id="form">
 
     <p>
-      <label >Nombre
-        <span >*</span>
-      </label>
-      <input type="text" name="introducir_nombre" id="nombre"  placeholder="Nombre">
+      <label class="form__label" for="firstname">Nombre * </label>
+          <input class="form__input" id="firstname" type="text" placeholder="Nombre"/>
     </p>
     <div class="error"></div>
     <div class="check-group">
@@ -111,7 +110,7 @@
         placeholder="Deja aquí tu comentario..."></textarea>
     </p>
 
-    <button type="submit" name="enviar_formulario" id="enviar" class="button">
+    <button type="submit" name="enviar_formulario" id="submit" class="button">
     
       Enviar
     </button>
