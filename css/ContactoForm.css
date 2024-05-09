@@ -22,12 +22,12 @@ body {
 	padding-bottom: 20px;
 	background-color: #F8b195;
 	border-radius: 10px;
-	width: 50%;
+	width: 60%;
 	margin: 20px auto;
 }
 
 .containerform {
-	/* Por defecto en modo fila, uno al lado del otro */
+	
 	display: flex;
 	flex-flow: row;
 	width: 100%;
@@ -38,7 +38,7 @@ body {
   
   .itemform1 {
 	flex: 1 1 auto;  
-	width: 50%;
+	width: 60%;
 	 
   	height: auto;
 	  margin: 20px auto;
@@ -73,7 +73,7 @@ body {
   
   @media (max-width: 750px) {
 	.containerform {
-	  /* si es muy angosta, uno debajo del otro */
+	  
 	  flex-flow: column;
 	}
   }
@@ -97,14 +97,14 @@ input{
 	border-color: #F8b195; 
 	margin-top: 10px;  
 	padding-left: 10px;
-  	/*margin-bottom: 20px; */
+  	
 }
 
 
 textarea{
   	background-color: #fbfbfb; 
 	  width: 100%; 
-	  /*height: 40px; */ 
+	  
 	border-radius: 5px;  
 	border-style: solid; 
 	border-width: 1px; 
@@ -156,6 +156,10 @@ button p{
 .aviso{
 	font-size: 13px;  
 	color: #0e0e0e;  
+}
+.error{
+	font-size: 14px;  
+	color: #e60e0e;  
 }
 
 ::-webkit-input-placeholder {

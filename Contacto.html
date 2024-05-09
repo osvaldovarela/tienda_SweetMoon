@@ -23,11 +23,16 @@
 </head>
 
 <body>
-  <script src="./js/script.js"></script>
+  
   <!--Inicio Header -->
   <div class="topnav" id="myTopnav">
-    <a href="index.html" class="logo" class="active"><img src="./img/logo/logo.png" alt="logo"/></a>
-    <a href="" class="active">
+    <a href="./index.html" title="Logo Sweet Moon" class="logo">
+      <img alt="imagen logo" src="./img/logo/logo.png"  />
+    </a>
+    <!--a href="" class="logo" class="active"
+      ><img src="./img/logo/logo.png" alt="logo"
+    /></-a-->
+    <a href="./index.html" class="active">
       <h1>Sweet Moon</h1>
     </a>
     <div class="menu-items">
@@ -35,8 +40,10 @@
       <a href="./aboutme.html">Acerca de mí</a>
       <a href="./productos.html">Productos</a>
       <a href="./Contacto.html">Contacto</a>
-      <a id="pedido" href="#">Pedido
-        <i class="fa fa-shopping-cart" aria-hidden="true" title="Carrito"></i></a>
+      <a id="pedido" href="#"
+        >Pedido
+        <i class="fa fa-shopping-cart" aria-hidden="true" title="Carrito"></i
+      ></a>
     </div>
     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
       <i class="fa fa-bars"></i>
@@ -54,19 +61,19 @@
   
   <h1 class="TituloForm">CONTACTANOS</h1>
 
-<!-- Inicio formulario item 1-->
+  <!-- Inicio formulario item 1-->
 
   <div class="itemform1">
     
-    <form method="post">
+    <form class="form">
 
     <p>
-      <label for="nombre" class="colocar_nombre">Nombre
-        <span class="obligatorio">*</span>
+      <label >Nombre
+        <span >*</span>
       </label>
-      <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Nombre">
+      <input type="text" name="introducir_nombre" id="nombre"  placeholder="Nombre">
     </p>
-
+    <div class="error"></div>
     <div class="check-group">
       <label class="checkbox"><input type='checkbox' name='checkbox' value='1' /> Buenos Aires <span></span></label>
       <label class="checkbox"><input type='checkbox' name='checkbox' value='2' /> Interior <span></span></label>
@@ -77,16 +84,16 @@
       
 
     <p>
-      <label for="email" class="colocar_email">Email
-        <span class="obligatorio">*</span>
+      <label >Email
+        <span >*</span>
       </label>
-      <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Mail">
+      <input type="text" name="introducir_email" id="email"  placeholder="Mail">
     </p>
 
     <p>
-      <label for="telefono" class="colocar_telefono">Teléfono
+      <label >Teléfono
       </label>
-      <input type="tel" name="introducir_telefono" id="telefono" placeholder="Teléfono">
+      <input type="text" name="introducir_telefono" id="telefono" placeholder="Teléfono">
     </p>
     <p>
     <label>Motivo</label>
@@ -97,10 +104,10 @@
     </select>
   </p>
     <p>
-      <label for="mensaje" class="colocar_mensaje">Mensaje
-        <span class="obligatorio">*</span>
+      <label >Mensaje
+        <span >*</span>
       </label>
-      <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio"
+      <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" 
         placeholder="Deja aquí tu comentario..."></textarea>
     </p>
 
@@ -109,9 +116,10 @@
       Enviar
     </button>
 
-    <p class="aviso">
-      <span class="obligatorio"> * </span>los campos son obligatorios.
-    </p>
+    <!--p class="aviso">
+      <span class="obligatorio"> * </span>Los campos son obligatorios.
+    </p-->
+    <div class="error"></div>
 
   </form>
   </div>
@@ -165,7 +173,7 @@
     <div class="itemform3">
       <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3271.403140866686!2d-57.957165224985815!3d-34.92142507434518!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2e62e3fc93575%3A0x6ffaec3bf616e000!2sPlaza%20Moreno!5e0!3m2!1ses-419!2sar!4v1713810102512!5m2!1ses-419!2sar"
-            width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+            width="80%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
 
@@ -216,6 +224,7 @@
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
   <script src="./js/main.js"></script>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>
