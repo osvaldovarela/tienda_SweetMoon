@@ -35,20 +35,21 @@ function irArriba() {
 // funcion para mostrar el modal al presionar el boton añadir
 //lista de todos los botones para añadir
 const btns_add_item = document.querySelectorAll(".add-product");
-
+const contadorSpan = document.querySelector("#contador");
 const closeModal = document.querySelector("#btn-cerrar-modal");
 
 // Iteramos sobre cada botón y agregamos el event listener
+let contador = 0;
 btns_add_item.forEach((btn) => {
   btn.addEventListener("click", () => {
     window.modal.show();
+    contador++;
+
+    // Actualiza el contenido del contador en la página
+    contadorSpan.textContent = contador;
   });
 });
 
 closeModal.addEventListener("click", () => {
   window.modal.close();
 });
-
-
-
-
