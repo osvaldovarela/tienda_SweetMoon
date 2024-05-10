@@ -18,8 +18,8 @@ body {
   position: relative;
   width: 100%;
   height: 100%;
+  background-color: #fcf5e5;
   background-size: cover;
-  background-repeat: no-repeat;
   color: #ffffff;
   font-family: "Overlock", sans-serif;
   overflow-x: hidden;
@@ -121,58 +121,11 @@ a {
 
 /* ====== Fin Header ======*/
 
+
 /* ===== Inicio Contenido Ppal ====*/
 
-/* ----carousel---- */
 
-.carousel-item {
-  /*  height: 65vh;
-  min-height: 300px; */
-  background: no-repeat center center scroll;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
 
-/*---Boton de Ir Arriba---*/
-
-#myBtn {
-  display: none;
-  position: fixed;
-  bottom: 1vh;
-  right: 4vw;
-  z-index: 99;
-  border: none;
-  outline: none;
-  background-color: #535252;
-  color: white;
-  cursor: pointer;
-  padding: 0.5em;
-  border-radius: 0.4em;
-  font-size: 1.3em;
-  font-weight: 600;
-  overflow: hidden;
-}
-
-#myBtn:hover {
-  background-color: #f85656;
-}
-
-/* ---video--- */
-
-.container_video {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: -50px;
-}
-.video {
-  max-width: 50%;
-  height: auto;
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
 
 /* ----Sección de Productos---- */
 
@@ -240,6 +193,7 @@ button:hover {
   width: 100%;
   height: 100%;
   transition: 300ms;
+  text-align: center;
 }
 
 .tienda_button:hover a {
@@ -248,6 +202,21 @@ button:hover {
 
 .tienda_button:active {
   transform: scale(0.9);
+}
+
+/* ---video--- */
+
+.container_video {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: -50px;
+}
+.video {
+  max-width: 50%;
+  height: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 /* ----Testimonios---- */
@@ -322,7 +291,6 @@ button:hover {
   right: 100%;
   top: 35px;
   border: solid transparent;
-  /* content: " "; */
   height: 0;
   width: 0;
   position: absolute;
@@ -357,6 +325,30 @@ button:hover {
   font-size: 10px;
   text-transform: uppercase;
   letter-spacing: 1px;
+}
+
+/*---Boton de Ir Arriba---*/
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 1vh;
+  right: 4vw;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #535252;
+  color: white;
+  cursor: pointer;
+  padding: 0.5em;
+  border-radius: 0.4em;
+  font-size: 1.3em;
+  font-weight: 600;
+  overflow: hidden;
+}
+
+#myBtn:hover {
+  background-color: #f85656;
 }
 
 /* ====== Fin Contenido Ppal ====== */
@@ -414,6 +406,16 @@ footer {
     justify-content: space-evenly;
     align-items: center;
   }
+
+.carousel-item {
+  height: 50vh;
+}
+
+.carousel-item img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
 }
 
 @media screen and (max-width: 992px) {

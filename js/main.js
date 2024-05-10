@@ -48,3 +48,7 @@ btns_add_item.forEach((btn) => {
 closeModal.addEventListener("click", () => {
   window.modal.close();
 });
+
+
+
+
