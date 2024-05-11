@@ -116,7 +116,7 @@ a {
 
 #pedido {
   background-color: #ff0000;
-  margin-left: 30px;
+  margin-left: 2rem;
 }
 
 /* ====== Fin Header ======*/
@@ -212,6 +212,7 @@ button:hover {
   justify-content: center;
   margin-bottom: -50px;
 }
+
 .video {
   max-width: 50%;
   height: auto;
@@ -227,13 +228,13 @@ button:hover {
   margin-bottom: 60px;
 }
 
-.principal_title > h3 {
+.principal_title>h3 {
   color: #000000;
   margin: 0;
   font-size: 40px;
 }
 
-.principal_title > p {
+.principal_title>p {
   color: #ff3333;
   font-size: 16px;
 }
@@ -407,15 +408,15 @@ footer {
     align-items: center;
   }
 
-.carousel-item {
-  height: 50vh;
-}
+  .carousel-item {
+    height: 50vh;
+  }
 
-.carousel-item img {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-}
+  .carousel-item img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -484,7 +485,7 @@ footer {
   }
 
   .video {
-  max-width: 70%;
+    max-width: 70%;
   }
 
   .card-container {
@@ -550,7 +551,7 @@ footer {
     flex-direction: column;
   }
 
-  .main_menu_footer > li {
+  .main_menu_footer>li {
     margin-bottom: 11px;
   }
 
