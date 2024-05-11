@@ -1,32 +1,41 @@
 @import url("https://fonts.googleapis.com/css2?family=Bad+Script&family=Overlock:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap");
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+
+
 #pedido {
     position: relative;
+    padding-top: .7rem;
     right: 0;
-    top: .3rem;
+    /* top: .2rem; */
     margin-bottom: .5rem;
+    margin-left: 2rem;
     justify-content: center;
     align-items: center;
+
 
 }
 
 .carrito_img {
-    width: 1.5rem;
+    width: 2rem;
 }
 
-.hijo {
-    display: inline;
-}
 
 #contador {
     display: flex;
     position: absolute;
+    padding-bottom: 1rem;
     justify-content: center;
     align-items: center;
-    right: 1.3rem;
+    right: 1.6rem;
     top: 0;
     color: rgba(0, 0, 0, 0.664);
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
 
@@ -64,21 +73,28 @@
 }
 
 .info-product {
-    padding: .8em;
+    padding: .6em;
     line-height: 0;
     width: 100%;
     display: inline-flex;
+    flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: .3em;
+    gap: .1em;
+
+}
+
+.info-product h2 {
+    font-size: 1.125em;
+    font-weight: bold;
 }
 
 p.price {
     color: black;
-    font-weight: bolder;
+    font-weight: medium;
     padding: .5em;
-    font-size: 2rem;
+    font-size: 1em;
 }
 
 
@@ -192,7 +208,7 @@ p.price {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         gap: .8rem;
-        padding-top: 1rem;
+        padding-top: .8rem;
         padding-left: .8rem;
         padding-right: .8rem;
     }
@@ -211,6 +227,19 @@ p.price {
         padding-right: .8rem;
     }
 
+    /* 
+    .info-product h2 {
+        font-size: 1.1rem;
+        font-weight: 400;
+    }
+
+    p.price {
+        color: black;
+        font-weight: medium;
+        padding: .3em;
+        font-size: 1rem;
+    } */
+
     #pedido {
         display: flex;
         position: relative;
@@ -226,8 +255,6 @@ p.price {
 
     }
 
-
-
     #contador {
         display: flex;
         position: absolute;
@@ -242,13 +269,35 @@ p.price {
 
 }
 
-@media only screen and (min-width: 480px) and (max-width: 768px) {}
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+    .container-items {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        padding-top: .5rem;
+        padding-bottom: 1rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    /* .info-product h2 {
+        font-size: 1.875rem;
+        font-weight: 500;
+    }
+
+    p.price {
+        color: black;
+        font-weight: medium;
+        padding: .3em;
+        font-size: 1.2rem;
+    } */
+}
 
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
     .container-items {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         gap: 1rem;
         padding-top: 1rem;
         padding-left: .8rem;
@@ -289,21 +338,32 @@ p.price {
 }
 
 @media only screen and (min-width: 1024px) {
+
     .container-items {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: 1rem;
-        padding-top: 1rem;
-        padding-left: .8rem;
-        padding-right: .8rem;
+        gap: 1.5rem;
+        padding-top: .5rem;
+        padding-bottom: 1rem;
+        padding-left: 8rem;
+        padding-right: 8rem;
     }
+
+    /* .info-product h2 {
+        font-size: 1.875rem;
+        font-weight: 500;
+    }
+
+    p.price {
+        color: black;
+        font-weight: medium;
+        padding: .3em;
+        font-size: 1.2rem;
+    } */
 
     #pedido {
         position: relative;
         display: flex;
-        right: .3rem;
-        top: .3rem;
-        bottom: .3rem;
         justify-content: center;
         align-items: center;
 
@@ -312,10 +372,8 @@ p.price {
     .carrito_img {
         width: 50%;
         position: relative;
-    }
-
-    .hijo {
-        display: inline;
+        padding: 0;
+        margin: 0;
     }
 
     #contador {
