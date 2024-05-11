@@ -1,229 +1,255 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
 
-<head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"/>
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"/>
-    
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
-  <link rel="shortcut icon" href="./img/logo/logo.ico"/>
-  <link rel="stylesheet" href="./css/productos_style.css">
-  <link rel="stylesheet" href="./css/style.css"/>
-  <link rel="stylesheet" href="./css/ContactoForm.css">
-  <script src="https://kit.fontawesome.com/02bd1ceeed.js" crossorigin="anonymous"></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="shortcut icon" href="./img/logo/logo.ico" />
+    <!-- <link rel="stylesheet" href="./css/productos_style.css" /> -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/ContactoForm.css" />
+    <script
+      src="https://kit.fontawesome.com/02bd1ceeed.js"
+      crossorigin="anonymous"
+    ></script>
 
-  
+    <title>Productos - Tienda Sweet Moon</title>
+  </head>
 
-
-  <title>Productos - Tienda Sweet Moon</title>
-</head>
-
-<body>
-  
-  <!--Inicio Header -->
-  <div class="topnav" id="myTopnav">
-    <a href="./index.html" title="Logo Sweet Moon" class="logo">
-      <img alt="imagen logo" src="./img/logo/logo.png"  />
-    </a>
-    <!--a href="" class="logo" class="active"
-      ><img src="./img/logo/logo.png" alt="logo"
-    /></-a-->
-    <a href="./index.html" class="active">
-      <h1>Sweet Moon</h1>
-    </a>
-    <div class="menu-items">
-      <a href="./index.html" class="active">Home</a>
-      <a href="./aboutme.html">Sobre Sweet</a>
-      <a href="./productos.html">Productos</a>
-      <a href="./Contacto.html">Contacto</a>
-      <a id="pedido" href="#"
-        >Pedido
-        <i class="fa fa-shopping-cart" aria-hidden="true" title="Carrito"></i
-      ></a>
+  <body>
+    <!--Inicio Header -->
+    <div class="topnav" id="myTopnav">
+      <a href="" class="logo" class="active"
+        ><img src="./img/logo/logo.png" alt="logo"
+      /></a>
+      <a href="./index.html" class="active">
+        <h1>Sweet Moon</h1>
+      </a>
+      <div class="menu-items">
+        <a href="./index.html" class="active">Home</a>
+        <a href="./aboutme.html">Sobre Sweet</a>
+        <a href="./productos.html">Productos</a>
+        <a href="./Contacto.html">Contacto</a>
+        <a id="pedido" href="#"
+          >Pedido
+          <i class="fa fa-shopping-cart" aria-hidden="true" title="Carrito"></i
+        ></a>
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
     </div>
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-      <i class="fa fa-bars"></i>
-    </a>
-  </div>
-  <!-- Fin Header-->
- <!-- Boton de Ir Arriba -->
- <button onclick="irArriba()" id="myBtn" title="Arriba"><i class="fa fa-arrow-circle-up"
-  aria-hidden="true"></i></button>
-<!-- Fin Boton de Ir Arriba -->
-
-
-<!-- Inicio datos de contacto -->
-
-  
-  <h1 class="TituloForm">CONTACTANOS</h1>
-
-  <!-- Inicio formulario item 1-->
-  
-
-  <div class="itemform1">
-    
-    <form class="form" id="form">
-
-    <p>
-      <label class="form__label" for="firstname">Nombre * </label>
-          <input class="form__input" id="firstname" type="text" placeholder="Nombre"/>
-    </p>
-    <div class="error"></div>
-    <div class="check-group">
-      <label class="checkbox"><input type='checkbox' name='checkbox' value='1' /> Buenos Aires <span></span></label>
-      <label class="checkbox"><input type='checkbox' name='checkbox' value='2' /> Interior <span></span></label>
-      
-    </div>
-    
-
-      
-
-    <p>
-      <label >Email
-        <span >*</span>
-      </label>
-      <input type="text" name="introducir_email" id="email"  placeholder="Mail">
-    </p>
-
-    <p>
-      <label >Teléfono
-      </label>
-      <input type="text" name="introducir_telefono" id="telefono" placeholder="Teléfono">
-    </p>
-    <p>
-    <label>Motivo</label>
-    <select name="select" class="selector">
-      <option value="value1">Consulta</option>
-      <option value="value2">Pedido</option>
-      <option value="value3">Queja/Sugerencia</option>
-    </select>
-  </p>
-    <p>
-      <label >Mensaje
-        <span >*</span>
-      </label>
-      <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" 
-        placeholder="Deja aquí tu comentario..."></textarea>
-    </p>
-
-    <button type="submit" name="enviar_formulario" id="submit" class="button">
-    
-      Enviar
+    <!-- Fin Header-->
+    <!-- Boton de Ir Arriba -->
+    <button onclick="irArriba()" id="myBtn" title="Arriba">
+      <i class="fa fa-arrow-circle-up" aria-hidden="true"></i>
     </button>
+    <!-- Fin Boton de Ir Arriba -->
 
-    <!--p class="aviso">
+    <!-- Inicio datos de contacto -->
+
+    <h1 class="TituloForm">CONTACTANOS</h1>
+
+    <!-- Inicio formulario item 1-->
+
+    <div class="itemform1">
+      <form class="form" id="form">
+        <p>
+          <label class="form__label" for="firstname">Nombre * </label>
+          <input
+            class="form__input"
+            id="firstname"
+            type="text"
+            placeholder="Nombre"
+          />
+        </p>
+        <div class="error"></div>
+        <div class="check-group">
+          <label class="checkbox"
+            ><input type="checkbox" name="checkbox" value="1" /> Buenos Aires
+            <span></span
+          ></label>
+          <label class="checkbox"
+            ><input type="checkbox" name="checkbox" value="2" /> Interior
+            <span></span
+          ></label>
+        </div>
+
+        <p>
+          <label
+            >Email
+            <span>*</span>
+          </label>
+          <input
+            type="text"
+            name="introducir_email"
+            id="email"
+            placeholder="Mail"
+          />
+        </p>
+
+        <p>
+          <label>Teléfono </label>
+          <input
+            type="text"
+            name="introducir_telefono"
+            id="telefono"
+            placeholder="Teléfono"
+          />
+        </p>
+        <p>
+          <label>Motivo</label>
+          <select name="select" class="selector">
+            <option value="value1">Consulta</option>
+            <option value="value2">Pedido</option>
+            <option value="value3">Queja/Sugerencia</option>
+          </select>
+        </p>
+        <p>
+          <label
+            >Mensaje
+            <span>*</span>
+          </label>
+          <textarea
+            name="introducir_mensaje"
+            class="texto_mensaje"
+            id="mensaje"
+            placeholder="Deja aquí tu comentario..."
+          ></textarea>
+        </p>
+
+        <button
+          type="submit"
+          name="enviar_formulario"
+          id="submit"
+          class="button"
+        >
+          Enviar
+        </button>
+
+        <!--p class="aviso">
       <span class="obligatorio"> * </span>Los campos son obligatorios.
     </p-->
-    <div class="error"></div>
+        <div class="error"></div>
+      </form>
+    </div>
 
-  </form>
-  </div>
- 
+    <div class="containerform">
+      <!-- Fin formulario item 1-->
 
-  <div class="containerform">
+      <!-- Inicio datos 2 -->
 
-    
-<!-- Fin formulario item 1-->
+      <div class="itemform2">
+        <ul>
+          <li><img src="./img/logo/logo.png" alt="logo" class="imglogo" /></li>
 
-<!-- Inicio datos 2 -->
+          <li class="contacto-items">
+            <p>
+              <i class="fa-regular fa-clock"></i>
+              Lunes a Sabados de 10 a 13 y de 15 a 18 hs.<br />
+            </p>
+          </li>
 
-    <div class="itemform2">
+          <li class="contacto-items">
+            <p>
+              <i class="fa-solid fa-phone"></i>
+              1122334455 <br />
+            </p>
+          </li>
 
-      <ul>
-        <li><img src="./img/logo/logo.png" alt="logo" class="imglogo"/></li>
-      
-      
-        <li class="contacto-items">
-        <p>
-          <i class="fa-regular fa-clock"></i>
-          Lunes a Sabados de 10 a 13 y de 15 a 18 hs.<br>
-        </p>
-        </li>
-     
-        <li class="contacto-items">
-        <p>
-        <i class="fa-solid fa-phone"></i>
-         1122334455 <br>
-        </p>
-        </li>
-          
-        <li class="contacto-items">
-        
-        <p>
-        <i class="fa-regular fa-envelope"></i>
-            info@gmail.com <br>
-          </p>
-        </li>
-        <li class="contacto-items">
+          <li class="contacto-items">
+            <p>
+              <i class="fa-regular fa-envelope"></i>
+              info@gmail.com <br />
+            </p>
+          </li>
+          <li class="contacto-items">
             <i class="fa-solid fa-location-dot"></i>
-          Plaza Moreno 1234 - La Plata
-        </li>
-     
-      </ul>
+            Plaza Moreno 1234 - La Plata
+          </li>
+        </ul>
+      </div>
+      <!-- Fin datos 2 -->
+
+      <!-- Inicio mapa -->
+
+      <div class="itemform3">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3271.403140866686!2d-57.957165224985815!3d-34.92142507434518!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2e62e3fc93575%3A0x6ffaec3bf616e000!2sPlaza%20Moreno!5e0!3m2!1ses-419!2sar!4v1713810102512!5m2!1ses-419!2sar"
+          width="80%"
+          height="300"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
     </div>
-<!-- Fin datos 2 -->
+    <!-- Fin mapa -->
 
-<!-- Inicio mapa -->
+    <!-- Fin datos de contacto -->
 
-    <div class="itemform3">
-      <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3271.403140866686!2d-57.957165224985815!3d-34.92142507434518!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2e62e3fc93575%3A0x6ffaec3bf616e000!2sPlaza%20Moreno!5e0!3m2!1ses-419!2sar!4v1713810102512!5m2!1ses-419!2sar"
-            width="80%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-
-
-
-  </div>
-<!-- Fin mapa -->
-
-<!-- Fin datos de contacto -->
-
-
-  <!--  Footer -->
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="footer_nav">
-            <ul class="main_menu_footer">
-              <li style="margin-right: 11px !important">
-                <a href="./index.html">Home</a>
-              </li>
-              <li style="margin-right: 11px !important">
-                <a href="./aboutme.html">Sobre Sweet</a>
-              </li>
-              <li style="margin-right: 11px !important">
-                <a href="./productos.html">Productos</a>
-              </li>
-              <li style="margin-right: 11px !important">
-                <a href="./Contacto.html">Contacto</a>
-              </li>
-            </ul>
-            <div class="social">
-              <a href="https://www.instagram.com/sweetmoon_cake2/" target="_blank"><i class="fab fa-instagram"></i></a>
-              <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
-              <a href="#" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    <!--  Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="footer_nav">
+              <ul class="main_menu_footer">
+                <li style="margin-right: 11px !important">
+                  <a href="./index.html">Home</a>
+                </li>
+                <li style="margin-right: 11px !important">
+                  <a href="./aboutme.html">Sobre Sweet</a>
+                </li>
+                <li style="margin-right: 11px !important">
+                  <a href="./productos.html">Productos</a>
+                </li>
+                <li style="margin-right: 11px !important">
+                  <a href="./Contacto.html">Contacto</a>
+                </li>
+              </ul>
+              <div class="social">
+                <a
+                  href="https://www.instagram.com/sweetmoon_cake2/"
+                  target="_blank"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-whatsapp"></i></a>
+              </div>
             </div>
-          </div>
-          <div class="copyright-box">
-            <p class="copyright">© Codo a Codo 2024</p>
+            <div class="copyright-box">
+              <p class="copyright">© Codo a Codo 2024</p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </footer>
+    </footer>
 
-  <!-- Fin  footer-->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
-  <script src="./js/main.js"></script>
-  <script src="./js/script.js"></script>
-</body>
-
+    <!-- Fin  footer-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
 </html>
