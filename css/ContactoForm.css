@@ -117,7 +117,6 @@ label {
 .selector {
   background-color: #fbfbfb;
   border-color: #f8b195;
-  border-color: #f8b195;
   border-style: solid;
   border-radius: 10px;
   height: 40px;
@@ -126,6 +125,15 @@ label {
 button {
   text-transform: uppercase;
   border-radius: 10px;
+  border: none;
+  padding: .6em;
+  background-color: #f9b89fdc;
+}
+
+button:hover {
+  border: none;
+  padding: .8em;
+  background-color: #ffa682dc;
 }
 
 button p {
@@ -137,10 +145,12 @@ button p {
   font-size: 18px;
   color: #0e0e0e;
 }
+
 .aviso {
   font-size: 13px;
   color: #0e0e0e;
 }
+
 .error {
   font-size: 14px;
   color: #e60e0e;
@@ -174,11 +184,13 @@ button p {
   font-size: 12px;
   cursor: pointer;
 }
+
 .checkbox input {
   display: none;
   width: 0;
   height: 0;
 }
+
 .checkbox span {
   width: 20px;
   height: 20px;
@@ -190,7 +202,8 @@ button p {
   border-radius: 2%;
   background-color: #f8e7e0;
 }
-.checkbox input:checked + span:after {
+
+.checkbox input:checked+span:after {
   content: "\2713";
   display: block;
   width: 13px;
@@ -198,12 +211,15 @@ button p {
   font-size: 15px;
   color: #0e0e0e;
 }
-.checkbox input:checked + span {
+
+.checkbox input:checked+span {
   background-color: #f8b195;
 }
-.checkbox input:disabled + span {
+
+.checkbox input:disabled+span {
   background-color: #e5e5e5;
 }
+
 .checkbox span:before {
   position: absolute;
   content: "";
@@ -212,4 +228,10 @@ button p {
   opacity: 0;
   border-radius: 2%;
   background-color: #f8b195;
+}
+
+iframe {
+  width: 80%;
+  height: 100%;
+  border: 0;
 }
