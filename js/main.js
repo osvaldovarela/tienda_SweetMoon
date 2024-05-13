@@ -42,7 +42,7 @@ const closeModal = document.querySelector("#btn-cerrar-modal");
 let contador = 0;
 btns_add_item.forEach((btn) => {
   btn.addEventListener("click", () => {
-    window.modal.show();
+    window.modal.showModal();
     contador++;
 
     // Actualiza el contenido del contador en la página
