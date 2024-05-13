@@ -10,13 +10,12 @@
 
 #pedido {
     position: relative;
-    padding-top: .7rem;
+    padding-top: .5rem;
     right: 0;
-    /* top: .2rem; */
-    margin-bottom: .5rem;
-    margin-left: 2rem;
-    justify-content: center;
-    align-items: center;
+    margin-bottom: 0;
+    justify-content: right;
+    align-items: baseline;
+    text-align: center;
 
 
 }
@@ -29,12 +28,12 @@
 #contador {
     display: flex;
     position: absolute;
-    padding-bottom: 1rem;
-    justify-content: center;
-    align-items: center;
-    right: 1.6rem;
+    padding-bottom: .2rem;
+    /* justify-content: center;
+    align-items: center; */
+    right: 1.7rem;
     top: 0;
-    color: rgba(0, 0, 0, 0.664);
+    color: white;
     font-size: 1rem;
 }
 
@@ -169,8 +168,7 @@ p.price {
 }
 
 #modal::backdrop {
-    background-color: rgba(0, 0, 0, .80);
-
+    background-color: rgba(0, 0, 0, .40);
 }
 
 /* animacion del icono en el pop-up */
@@ -227,18 +225,6 @@ p.price {
         padding-right: .8rem;
     }
 
-    /* 
-    .info-product h2 {
-        font-size: 1.1rem;
-        font-weight: 400;
-    }
-
-    p.price {
-        color: black;
-        font-weight: medium;
-        padding: .3em;
-        font-size: 1rem;
-    } */
 
     #pedido {
         display: flex;
@@ -250,19 +236,19 @@ p.price {
 
     }
 
-    .carrito_img {
-        width: .38rem;
+    /* .carrito_img {
+        width: 1rem;
 
-    }
+    } */
 
     #contador {
         display: flex;
         position: absolute;
         justify-content: center;
         align-items: center;
-        right: 2.9rem;
+        right: 6rem;
         top: 0;
-        color: rgba(13, 12, 12, 0.922);
+        color: white;
         font-size: 1.2rem;
     }
 
@@ -280,17 +266,17 @@ p.price {
         padding-right: 2rem;
     }
 
-    /* .info-product h2 {
-        font-size: 1.875rem;
-        font-weight: 500;
+    #contador {
+        display: flex;
+        position: absolute;
+        justify-content: right;
+        align-items: baseline;
+        right: 1.5rem;
+        top: 0;
+        color: white;
+        font-size: 1.2rem;
     }
 
-    p.price {
-        color: black;
-        font-weight: medium;
-        padding: .3em;
-        font-size: 1.2rem;
-    } */
 }
 
 
@@ -310,8 +296,8 @@ p.price {
         right: 0;
         margin: 0;
         bottom: 0;
-        justify-content: center;
-        align-items: center;
+        justify-content: right;
+        align-items: baseline;
     }
 
     .carrito_img {
@@ -324,8 +310,8 @@ p.price {
         top: .3rem;
         display: flex;
         position: absolute;
-        right: 2.52rem;
-        color: rgba(0, 0, 0, 0.79);
+        right: 2.2rem;
+        color: white;
         font-size: 1rem;
     }
 
@@ -365,12 +351,12 @@ p.price {
         position: relative;
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: baseline;
 
     }
 
     .carrito_img {
-        width: 50%;
+        width: 70%;
         position: relative;
         padding: 0;
         margin: 0;
@@ -381,9 +367,9 @@ p.price {
         position: absolute;
         justify-content: center;
         align-items: center;
-        right: 3.2rem;
+        right: 2.8rem;
         top: 0;
-        color: rgba(13, 12, 12, 0.922);
+        color: white;
         font-size: 1.2rem;
     }
 
