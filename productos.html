@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -13,11 +13,11 @@
     <link rel="shortcut icon" href="./img/logo/logo.ico">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/productos_style.css">
-
     <title>Productos - Tienda Sweet Moon</title>
 </head>
 
 <body>
+    <!-- header -->
     <!--Inicio Header -->
     <div class="topnav" id="myTopnav">
         <a href="" class="logo active"><img src="./img/logo/logo.png" alt="logo"></a>
@@ -41,258 +41,17 @@
         </a>
     </div>
     <!-- Fin Header-->
-
-
     <!-- Boton de Ir Arriba -->
-    <button onclick="irArriba()" id="myBtn" title="Arriba"><i class="fa fa-arrow-circle-up"
-            aria-hidden="true"></i></button>
+    <button onclick="irArriba()" id="myBtn" title="Arriba"><i class="fa fa-chevron-up" aria-hidden="true"></i></button>
     <!-- Fin Boton de Ir Arriba -->
 
-    <!-- Inicio Grilla de Productos -->
-    <div class="container-items">
-        <div class="item">
-            <figure>
-                <img src="./img/productos/postres/1.jpg" alt="Macarons de frutilla">
 
-            </figure>
-            <div class="info-product">
-                <h2>Macarons de frutilla</h2>
-                <p class="price">$ 10000</p>
-                <button class="button add-product" type="button">Añadir
-                    al
-                    carrito</button>
-            </div>
-        </div>
-        <div class="item">
-            <figure>
-                <img src="./img/productos/postres/2.jpg" alt="Pavlova">
-            </figure>
-            <div class="info-product">
-                <h2>Pavlova</h2>
-                <p class="price">$ 20000</p>
-                <button class="button add-product" type="button">Añadir
-                    al
-                    carrito</button>
-            </div>
-        </div>
-        <div class="item">
-            <figure>
-                <img src="./img/productos/postres/3.jpg" alt="Sabayón de oporto">
-            </figure>
-            <div class="info-product">
-                <h2>Sabayón de oporto</h2>
-                <p class="price">$ 10000</p>
-                <button class="button add-product" type="button">Añadir
-                    al
-                    carrito</button>
-            </div>
-        </div>
-        <div class="item">
-            <figure>
-                <img src="./img/productos/postres/4.jpg" alt="Torta brownie">
-            </figure>
-            <div class="info-product">
-                <h2>Torta brownie</h2>
-                <p class="price">$ 40000</p>
-                <button class="button add-product" type="button">Añadir
-                    al
-                    carrito</button>
-            </div>
-        </div>
-        <div class="item">
-            <figure>
-                <img src="./img/productos/postres/5(1).jpg" alt="Volcán de chocolate">
-            </figure>
-            <div class="info-product">
-                <h2>Volcán de chocolate</h2>
-                <p class="price">$ 30000</p>
-                <button class="button add-product" type="button">Añadir
-                    al
-                    carrito</button>
-            </div>
-        </div>
-        <div class="item">
-            <figure>
-                <img src="./img/productos/postres/8.jpg" alt="Panna Cota">
-            </figure>
-            <div class="info-product">
-                <h2>Panna Cota</h2>
-                <p class="price">$ 20000</p>
-                <button class="button add-product" type="button">Añadir
-                    al
-                    carrito</button>
-            </div>
-        </div>
-        <div class="item">
-            <figure>
-                <img src="./img/productos/postres/7.jpg" alt="Carrot cake">
-            </figure>
-            <div class="info-product">
-                <h2>Carrot cake</h2>
-                <p class="price">$ 8000</p>
-                <button class="button add-product" type="button">Añadir
-                    al
-                    carrito</button>
-            </div>
-        </div>
-        <div class="item">
-            <figure>
-                <img src="./img/productos/postres/9.jpg" alt="CheeseCake frutos rojos">
-            </figure>
-            <div class="info-product">
-                <h2>CheeseCake frutos rojos</h2>
-                <p class="price">$ 40000</p>
-                <button class="button add-product" type="button">Añadir
-                    al
-                    carrito</button>
-            </div>
-        </div>
-        <div class="item">
-            <figure>
-                <img src="./img/productos/postres/10.jpg" alt="Torta de masa sablée - número ">
-            </figure>
-            <div class="info-product">
-                <h2>Torta de masa sablée - número </h2>
-                <p class="price">$ 10000</p>
-                <button class="button add-product" type="button">Añadir
-                    al
-                    carrito</button>
-            </div>
-        </div>
-        <div class="item">
-            <figure>
-                <img src="./img/productos/postres/11.jpg" alt="Baba au rhum con crema">
-            </figure>
-            <div class="info-product">
-                <h2>Baba au rhum con crema</h2>
-                <p class="price">$ 8000</p>
-                <button class="button add-product" type="button">Añadir
-                    al
-                    carrito</button>
-            </div>
-        </div>
-        <div class="item">
-            <figure>
-                <img src="./img/productos/postres/12.jpg" alt="Bavaroise de chocolate blanco">
-            </figure>
-            <div class="info-product">
-                <h2>Bavaroise de chocolate blanco</h2>
-                <p class="price">$ 10000</p>
-                <button class="button add-product" type="button">Añadir
-                    al
-                    carrito</button>
-            </div>
-        </div>
-        <div class="item">
-            <figure>
-                <img src="./img/productos/postres/13.jpg" alt="Pera al vino tinto">
-            </figure>
-            <div class="info-product">
-                <h2>Pera al vino tinto</h2>
-                <p class="price">$ 8000</p>
-                <button class="button add-product" type="button">Añadir
-                    al
-                    carrito</button>
-            </div>
-        </div>
-        <div class="item">
-            <figure>
-                <img src="./img/productos/postres/14.jpg" alt="Petit gateau de chocolate y naranja">
-            </figure>
-            <div class="info-product">
-                <h2>Petit gateau de chocolate y naranja</h2>
-                <p class="price">$ 9000</p>
-                <button class="button add-product" type="button">Añadir
-                    al
-                    carrito</button>
-            </div>
-        </div>
-        <div class="item">
-            <figure>
-                <img src="./img/productos/postres/15.jpg" alt="Arrollado de macha">
-            </figure>
-            <div class="info-product">
-                <h2>Arrollado de macha</h2>
-                <p class="price">$ 7500</p>
-                <button class="button add-product" type="button">Añadir
-                    al
-                    carrito</button>
-            </div>
-        </div>
-        <div class="item">
-            <figure>
-                <img src="./img/productos/postres/16(1).jpg" alt="Eclair de maracuyá y chocolate blanco">
-            </figure>
-            <div class="info-product">
-                <h2>Eclair de maracuyá y chocolate blanco</h2>
-                <p class="price">$ 40000</p>
-                <button class="button add-product" type="button">Añadir
-                    al
-                    carrito</button>
-            </div>
-        </div>
-        <div class="item">
-            <figure>
-                <img src="./img/productos/postres/17(1).jpg" alt="Eclair de ferrero rocher">
-            </figure>
-            <div class="info-product">
-                <h2>Eclair de ferrero rocher</h2>
-                <p class="price">$ 40000</p>
-                <button class="button add-product" type="button">Añadir
-                    al
-                    carrito</button>
-            </div>
-        </div>
-        <div class="item">
-            <figure>
-                <img src="./img/productos/postres/18(1).jpg" alt="Eclair de key pie">
-            </figure>
-            <div class="info-product">
-                <h2>Eclair de key pie</h2>
-                <p class="price">$ 40000</p>
-                <button class="button add-product" type="button">Añadir
-                    al
-                    carrito</button>
-            </div>
-        </div>
-        <div class="item">
-            <figure>
-                <img src="./img/productos/postres/19.jpg" alt="Torta desnuda de frutilla">
-            </figure>
-            <div class="info-product">
-                <h2>Torta desnuda de frutilla</h2>
-                <p class="price">$ 20000</p>
-                <button class="button add-product" type="button">Añadir
-                    al
-                    carrito</button>
-            </div>
-        </div>
-        <div class="item">
-            <figure>
-                <img src="./img/productos/postres/20.jpg" alt="Torta con bizcochuelo de chocolate">
-            </figure>
-            <div class="info-product">
-                <h2>Torta con bizcochuelo de chocolate</h2>
-                <p class="price">$ 15000</p>
-                <button class="button add-product" type="button">Añadir
-                    al
-                    carrito</button>
-            </div>
-        </div>
-        <div class="item">
-            <figure>
-                <img src="./img/productos/postres/21.jpg" alt="Flan con crema y dulce de leche">
-            </figure>
-            <div class="info-product">
-                <h2>Flan con crema y dulce de leche</h2>
-                <p class="price">$ 10000</p>
-                <button class="button add-product" type="button">Añadir
-                    al
-                    carrito</button>
-            </div>
-        </div>
+    <!-- inicio grilla de productos -->
+    <div class="container-items">
+
     </div>
-    <!-- Fin Grilla de Productos  -->
+
+
     <!-- Emergente // Modal -->
     <dialog id="modal">
         <h2>Producto Añadido</h2>
@@ -309,7 +68,7 @@
     </dialog>
 
     <!-- fin Emergente -->
-
+    <!-- footer -->
     <!-- Inicio Footer -->
 
     <footer>
@@ -347,10 +106,13 @@
     </footer>
 
     <!-- Fin  footer-->
+
+    <script src="./js/main.js"></script>
+    <script src="./js/productos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-    <script src="./js/main.js"></script>
+
 </body>
 
 </html>
