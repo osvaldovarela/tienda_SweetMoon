@@ -50,15 +50,13 @@ body {
 
 h1 {
   color: #000000;
-  font-size: 2rem;
+  font-size: 2em;
   font-family: "Bad Script", cursive;
   font-weight: 600;
   font-style: normal;
   position: relative;
   padding-left: 0.1em;
   margin: auto;
-  display: flex;
-  align-items: space-between;
 }
 
 h2 {

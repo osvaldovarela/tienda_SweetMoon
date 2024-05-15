@@ -11,36 +11,14 @@
 
 
     <link rel="shortcut icon" href="./img/logo/logo.ico">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/productos_style.css">
     <title>Productos - Tienda Sweet Moon</title>
 </head>
 
 <body>
     <!-- header -->
-    <!--Inicio Header -->
-    <div class="topnav" id="myTopnav">
-        <a href="" class="logo active"><img src="./img/logo/logo.png" alt="logo"></a>
-        <a href="./index.html" class="active">
-            <h1>Sweet Moon</h1>
-        </a>
-        <div class="menu-items">
-            <a href="./index.html" class="active">Home</a>
-            <a href="./aboutme.html">Sobre Sweet</a>
-            <a href="./productos.html">Productos</a>
-            <a href="./Contacto.html">Contacto</a>
-            <a id="pedido" class="carrito_pedido" href="#">
-                <img class="carrito_img" src="./img/productos/carrito/carro_blanco_sin_fondo.png"
-                    alt=" Icono Carrito de Compras">
-                <span id="contador">_</span>
-            </a>
-            <!-- <i class="fa fa-shopping-cart" aria-hidden="true" title="Carrito"></i>-->
-        </div>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-        </a>
-    </div>
-    <!-- Fin Header-->
+    <header class="header"></header>
     <!-- Boton de Ir Arriba -->
     <button onclick="irArriba()" id="myBtn" title="Arriba"><i class="fa fa-chevron-up" aria-hidden="true"></i></button>
     <!-- Fin Boton de Ir Arriba -->
@@ -106,7 +84,7 @@
     </footer>
 
     <!-- Fin  footer-->
-
+    <script src="./js/elements.js"></script>
     <script src="./js/main.js"></script>
     <script src="./js/productos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
