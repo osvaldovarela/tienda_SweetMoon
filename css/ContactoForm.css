@@ -122,7 +122,7 @@ label {
   height: 40px;
 }
 
-button {
+.buttonForm {
   text-transform: uppercase;
   border-radius: 10px;
   border: none;
@@ -132,7 +132,7 @@ button {
 
 button:hover {
   border: none;
-  padding: .8em;
+  padding: .6em;
   background-color: #ffa682dc;
 }
 

@@ -23,7 +23,7 @@
 <body>
   <!--Inicio Header -->
   <div class="topnav" id="myTopnav">
-    <a href="" class="logo active"><img src="./img/logo/logo.png" alt="logo"></a>
+    <a href="./index.html" class="logo active"><img src="./img/logo/logo.png" alt="logo"></a>
     <a href="./index.html" class="active">
       <h1>Sweet Moon</h1>
     </a>
@@ -67,39 +67,40 @@
       </div>
 
       <p>
-        <label>Email
-          <span>*</span>
+        <label>Email *
+          
         </label>
-        <input type="text" name="introducir_email" id="email" placeholder="Mail">
+        <input type="email" required name="introducir_email" id="email" placeholder="Mail">
       </p>
 
       <p>
-        <label>Teléfono </label>
-        <input type="text" name="introducir_telefono" id="telefono" placeholder="Teléfono">
+        <label>Teléfono *</label>
+        
+        <input type="number" required name="introducir_telefono" id="telefono" placeholder="Teléfono">
       </p>
       <p>
         <label>Motivo</label>
-        <select name="select" class="selector">
-          <option value="value1">Consulta</option>
-          <option value="value2">Pedido</option>
-          <option value="value3">Queja/Sugerencia</option>
+        <select name="select" class="selector" >
+          <option >Consulta</option>
+          <option >Pedido</option>
+          <option >Queja/Sugerencia</option>
         </select>
       </p>
       <p>
-        <label>Mensaje
-          <span>*</span>
+        <label>Mensaje *
+         
         </label>
-        <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje"
+        <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" 
           placeholder="Deja aquí tu comentario..."></textarea>
       </p>
 
-      <button type="submit" name="enviar_formulario" id="submit" class="button">
+      <button type="submit" name="enviar_formulario" id="submit" class="buttonForm" value="Enviar">
         Enviar
       </button>
 
-      <!--p class="aviso">
-      <span class="obligatorio"> * </span>Los campos son obligatorios.
-    </p-->
+      <p class="aviso">
+        <span class="obligatorio"> * </span>Los campos son obligatorios.
+      </p>
       <div class="error"></div>
     </form>
   </div>
