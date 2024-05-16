@@ -33,6 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   //elemento nombre
   const nombrePagina = document.createElement("h1");
+  nombrePagina.classList.add("active");
   nombrePagina.classList.add("nombre");
   nombrePagina.textContent = "Sweet Moon";
 
