@@ -105,7 +105,25 @@ submitButton.addEventListener("click", (event) => {
   //reviso el array de errores para comprobar si los hubo
   if (errores.length === 0) {
     //todo OK
-    alert("Su formulario ha sido enviado exitosamente.");
+    const h2 = document.createElement("h2");
+    h2.textContent = "El formulario se ha enviado correctamente!";
+    modal.appendChild(h2);
+    modal.style.display = "block";
+    //creamos el modal que muestra mensaje de todo ok
+    const closeModal = document.createElement("button");
+
+    closeModal.setAttribute("id", "btn-cerrar-modal");
+    closeModal.setAttribute("type", "button");
+    closeModal.textContent = "Cerrar";
+
+    modal.appendChild(closeModal);
+    closeModal.disabled = false;
+
+    closeModal.addEventListener("click", () => {
+      modal.style.display = "none";
+    });
+
+    // alert("Su formulario ha sido enviado exitosamente.");
     form.reset();
   } else {
     // Limpiar cualquier mensaje de error anterior
@@ -113,7 +131,7 @@ submitButton.addEventListener("click", (event) => {
     const h1 = document.createElement("h1");
     const h2 = document.createElement("h2");
     h1.textContent = "El formulario no pudo ser enviado.";
-    h2.textContent = "Por favor, revise las siguientes indicaciones.";
+    h2.textContent = "Por favor, revise las siguientes indicaciones: ";
     modal.appendChild(h1);
     modal.appendChild(h2);
 
@@ -123,7 +141,7 @@ submitButton.addEventListener("click", (event) => {
         return obj.name === error;
       });
       if (objError) {
-        pError.textContent = objError.mensaje;
+        pError.textContent = "\u2022 " + objError.mensaje;
         divError.appendChild(pError);
         modal.appendChild(divError);
       }
