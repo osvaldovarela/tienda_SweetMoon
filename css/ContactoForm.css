@@ -114,6 +114,12 @@ label {
   color: #0e0e0e;
 }
 
+.addImg
+{
+  font-size: 16px;
+  color: #0e0e0e;
+}
+
 .selector {
   background-color: #fbfbfb;
   border-color: #f8b195;

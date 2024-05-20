@@ -58,7 +58,7 @@
         <label class="form__label" for="firstname">Nombre * </label>
         <input class="form__input" id="firstname" type="text" placeholder="Nombre">
       </p>
-      <div class="error"></div>
+      <div class="error" id="error-firstname"></div>
       <div class="check-group">
         <label class="checkbox"><input type="checkbox" name="checkbox" value="1"> Buenos Aires
           <span></span></label>
@@ -70,14 +70,15 @@
         <label>Email *
           
         </label>
-        <input type="email" required name="introducir_email" id="email" placeholder="Mail">
+        <input type="email" name="introducir_email" id="email" placeholder="Mail">
       </p>
-
+      <div class="error" id="error-email"></div>
       <p>
         <label>Teléfono *</label>
         
-        <input type="number" required name="introducir_telefono" id="telefono" placeholder="Teléfono">
+        <input type="number"  name="introducir_telefono" id="telefono" placeholder="Teléfono">
       </p>
+      <div class="error" id="error-telefono"></div>
       <p>
         <label>Motivo</label>
         <select name="select" class="selector" >
@@ -86,6 +87,13 @@
           <option >Queja/Sugerencia</option>
         </select>
       </p>
+
+      <p>
+      <label for="addImg" class="form__label">Si desea puede adjuntar una imagen (Admite archivos png, jpeg o jpg)</label>
+            
+      <input type="file" id="addImg" class="addImg" name="addImg" accept="image/png, image/jpeg, image/jpg">
+      </p>
+     
       <p>
         <label>Mensaje *
          
@@ -93,7 +101,7 @@
         <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" 
           placeholder="Deja aquí tu comentario..."></textarea>
       </p>
-
+      <div class="error" id="error-mensaje"></div>
       <button type="submit" name="enviar_formulario" id="submit" class="buttonForm" value="Enviar">
         Enviar
       </button>
@@ -101,7 +109,7 @@
       <p class="aviso">
         <span class="obligatorio"> * </span>Los campos son obligatorios.
       </p>
-      <div class="error"></div>
+     
     </form>
   </div>
 
