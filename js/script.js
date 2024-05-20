@@ -1,37 +1,3 @@
-/*let envio = [];
-
-const form = document.querySelector(".form");
-const nombre = document.querySelector("#firstname");
-
-form.addEventListener("submit", (event) => {
-  event.preventDefault();
-
-  const title = firstname.value.trim();
-
-  if (title.length >= 3) {
-    
-    const task = {
-      id: Date.now(),
-      title,
-      complete: false,
-    };
-
-    envio.push(task);
-
-
-    firstname.value = "";
-
- 
-  } else {
-    const error = document.querySelector(".error");
-    error.textContent = "Debe ingresar 3 caracteres o mas";
-
-    setTimeout(() => {
-      error.textContent = "";
-    }, 2000);
-  }
-});*/
-
 document.getElementById('form').addEventListener('submit', function(event) {
   event.preventDefault(); // Evita el envío del formulario
 
@@ -47,22 +13,34 @@ document.getElementById('form').addEventListener('submit', function(event) {
   // Validación de cada campo
   let isValid = true;
 
-  if (!validarNombre(nombre)) {
+  if (!nombre) {
+      document.getElementById('error-firstname').textContent = 'El campo nombre es obligatorio.';
+      isValid = false;
+  } else if (!validarNombre(nombre)) {
       document.getElementById('error-firstname').textContent = 'Por favor, ingrese un nombre válido.';
       isValid = false;
   }
 
-  if (!validarEmail(email)) {
+  if (!email) {
+      document.getElementById('error-email').textContent = 'El campo email es obligatorio.';
+      isValid = false;
+  } else if (!validarEmail(email)) {
       document.getElementById('error-email').textContent = 'Por favor, ingrese un email válido.';
       isValid = false;
   }
 
-  if (!validarTelefono(telefono)) {
+  if (!telefono) {
+      document.getElementById('error-telefono').textContent = 'El campo teléfono es obligatorio.';
+      isValid = false;
+  } else if (!validarTelefono(telefono)) {
       document.getElementById('error-telefono').textContent = 'Por favor, ingrese un teléfono válido.';
       isValid = false;
   }
 
-  if (!validarMensaje(mensaje)) {
+  if (!mensaje) {
+      document.getElementById('error-mensaje').textContent = 'El campo mensaje es obligatorio.';
+      isValid = false;
+  } else if (!validarMensaje(mensaje)) {
       document.getElementById('error-mensaje').textContent = 'Por favor, ingrese un mensaje.';
       isValid = false;
   }
@@ -70,7 +48,7 @@ document.getElementById('form').addEventListener('submit', function(event) {
   // Si todos los campos son válidos, enviar el formulario
   if (isValid) {
       alert('Formulario enviado correctamente!');
-      this.submit();
+      this.reset(); // Resetear el formulario
   }
 });
 
@@ -96,3 +74,4 @@ function validarTelefono(telefono) {
 function validarMensaje(mensaje) {
   return mensaje.length > 0;
 }
+

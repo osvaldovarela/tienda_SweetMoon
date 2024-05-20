@@ -70,13 +70,13 @@
         <label>Email *
           
         </label>
-        <input type="email" required name="introducir_email" id="email" placeholder="Mail">
+        <input type="email" name="introducir_email" id="email" placeholder="Mail">
       </p>
       <div class="error" id="error-email"></div>
       <p>
         <label>Teléfono *</label>
         
-        <input type="number" required name="introducir_telefono" id="telefono" placeholder="Teléfono">
+        <input type="number"  name="introducir_telefono" id="telefono" placeholder="Teléfono">
       </p>
       <div class="error" id="error-telefono"></div>
       <p>
@@ -87,6 +87,13 @@
           <option >Queja/Sugerencia</option>
         </select>
       </p>
+
+      <p>
+      <label for="addImg" class="form__label">Si desea puede adjuntar una imagen (Admite archivos png, jpeg o jpg)</label>
+            
+      <input type="file" id="addImg" class="addImg" name="addImg" accept="image/png, image/jpeg, image/jpg">
+      </p>
+     
       <p>
         <label>Mensaje *
          
