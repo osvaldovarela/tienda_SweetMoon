@@ -16,7 +16,6 @@
   font-family: "Overlock", sans-serif;
 } */
 
-<<<<<<< HEAD
 .TituloForm {
   text-align: center;
   font-size: 22px;
@@ -74,79 +73,6 @@
   .containerform {
     flex-flow: column;
   }
-=======
-
-body{
-	height: 100%; 
-	font-family: 'Noto Sans', sans-serif;
-  
-}
-
-
-.contact_form{	
-	width: 460px; 
-  height: auto;
-  margin: 80px auto;
-	border-radius: 10px;  
-	padding-top: 30px;
-	padding-bottom: 20px;  
-  background-color: #fbfbfb; 
-  padding-left: 30px; 
-}
-
-
-input{
-	background-color: #fbfbfb; 
-	width: 408px; 
-	height: 40px; 
-	border-radius: 5px;  
-	border-style: solid; 
-	border-width: 1px; 
-	border-color: #F8b195; 
-	margin-top: 10px;  
-	padding-left: 10px;
-  margin-bottom: 20px; 
-}
-
-
-textarea{
-  background-color: #fbfbfb; 
-	width: 405px; 
-	height: 150px; 
-	border-radius: 5px;  
-	border-style: solid; 
-	border-width: 1px; 
-	border-color: #F8b195; 
-	margin-top: 10px;  
-	padding-left: 10px;
-  margin-bottom: 20px; 
-  padding-top: 15px; 
-}
-
-
-label{
-  display: block; 
-	float: center; 	
-}
-
-
-button{
-	
-	
-	text-transform: uppercase;
-	background-color: #F8b195; 
-	border-color: #F8b195; 
-	border-style: solid; 
-	border-radius: 10px;	
-	
-  cursor: pointer;
-  
-  
-}
-.button:hover {
-    background-color: #f17d4f;
-    color: white;
->>>>>>> main
 }
 
 .contacto-items {
@@ -155,7 +81,6 @@ button{
   list-style-type: none;
 }
 
-<<<<<<< HEAD
 input {
   background-color: #fbfbfb;
   width: 100%;
@@ -193,38 +118,6 @@ label {
 {
   font-size: 16px;
   color: #0e0e0e;
-=======
-
-span{
-	color: #F8b195; 
-}
-
-
-.aviso{
-	font-size: 13px;  
-	color: #0e0e0e;  
-}
-
-
-h1{
-	font-size: 39px;  
-	text-align: left; 
-	padding-bottom: 20px; 
-	
-}
-
-
-h3{
-	font-size: 16px; 
-	padding-bottom: 30px;
-}
-
-
-
-p{
-	font-size: 14px; 
-	color: #0e0e0e; 
->>>>>>> main
 }
 
 .selector {
@@ -282,7 +175,6 @@ button p {
   border: 1px solid #f3b977;
 }
 
-<<<<<<< HEAD
 .formulario textarea:focus {
   outline: 0;
   border: 1px solid #f3b977;
@@ -348,10 +240,4 @@ iframe {
   width: 80%;
   height: 100%;
   border: 0;
-=======
-
-.formulario textarea:focus{
-	outline:0;
-	border: 1px solid #f3b977;
->>>>>>> main
 }
