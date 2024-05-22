@@ -11,7 +11,7 @@ Tienda de Pastelería
 
 ## Despliegue 📦
 
-[_Tienda SweetMoon_](https://osvaldovarela.github.io/tienda_SweetMoon/)
+_En proceso de desarrollo_
 
 ## Construido Con 🛠️
 
