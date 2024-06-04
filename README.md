@@ -11,7 +11,7 @@ Tienda de Pastelería
 
 ## Despliegue :package:
 
-[Tienda SweetMoon](https://osvaldovarela.github.io/tienda_SweetMoon/ target="_blank")
+[Tienda SweetMoon](https://osvaldovarela.github.io/tienda_SweetMoon/)
 
 ## Construido Con :hammer_and_wrench:
 
