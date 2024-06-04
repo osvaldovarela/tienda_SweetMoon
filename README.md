@@ -20,6 +20,7 @@ Tienda de Pastelería
     <img src="https://skillicons.dev/icons?i=html,css,js&theme=dark&perline=1" />
   </a>
 </p>
+
 ## Autores :black_nib:
 
 - Alicia Zuñega - [@alizunega](https://github.com/alizunega)
