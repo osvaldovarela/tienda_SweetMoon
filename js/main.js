@@ -27,7 +27,8 @@ function scrollFunction() {
 }
 
 function irArriba() {
-  document.body.scrollTop = 0; //para navegadores: Safari
-
-  document.documentElement.scrollTop = 0; // Para navegadores: Chrome, Firefox, IE and Opera
+  document.documentElement.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  }); // Para navegadores: Chrome, Firefox, IE and Opera
 }
