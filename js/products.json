@@ -1,0 +1,144 @@
+{
+    "productos": [
+        {
+            "id": 1,
+            "nombre": "Macarons de frutilla con relleno de chocolate",
+            "precio": 10000,
+            "source": "./img/productos/postres/1.jpg",
+            "taken": false
+        },
+        {
+            "id": 2,
+            "nombre": "Pavlova con frutos rojos",
+            "precio": 25000,
+            "source": "./img/productos/postres/2.jpg",
+            "taken": false
+        },
+        {
+            "id": 3,
+            "nombre": "Sabayón de oporto con nueces",
+            "precio": 15000,
+            "source": "./img/productos/postres/3.jpg",
+            "taken": false
+        },
+        {
+            "id": 4,
+            "nombre": "Torta brownie con dulce de leche, merengue italiano y frutos rojos",
+            "precio": 30000,
+            "source": "./img/productos/postres/4.jpg",
+            "taken": false
+        },
+        {
+            "id": 5,
+            "nombre": "Volcán de chocolate.",
+            "precio": 35000,
+            "source": "./img/productos/postres/5(1).jpg",
+            "taken": false
+        },
+        {
+            "id": 7,
+            "nombre": "Carrot cake con frosting de queso y pasas",
+            "precio": 28000,
+            "source": "./img/productos/postres/7.jpg",
+            "taken": false
+        },
+        {
+            "id": 8,
+            "nombre": "Panna Cotta de vainilla con arándanos",
+            "precio": 25000,
+            "source": "./img/productos/postres/8.jpg",
+            "taken": false
+        },
+        {
+            "id": 9,
+            "nombre": "Cheesecake de frutos rojos",
+            "precio": 25000,
+            "source": "./img/productos/postres/9.jpg",
+            "taken": false
+        },
+        {
+            "id": 10,
+            "nombre": "Torta de masa sablée con ganache de chocolate negro, chocolate blanco y ganache de frutilla",
+            "precio": 20000,
+            "source": "./img/productos/postres/10.jpg",
+            "taken": false
+        },
+        {
+            "id": 11,
+            "nombre": "Baba au rhum con crema",
+            "precio": 12000,
+            "source": "./img/productos/postres/11.jpg",
+            "taken": false
+        },
+        {
+            "id": 12,
+            "nombre": "Bavaroise de chocolate blanco y coulis de frutos rojos",
+            "precio": 15000,
+            "source": "./img/productos/postres/12.jpg",
+            "taken": false
+        },
+        {
+            "id": 13,
+            "nombre": "Pera al vino tinto con helado y mascarpone",
+            "precio": 18000,
+            "source": "./img/productos/postres/13.jpg",
+            "taken": false
+        },
+        {
+            "id": 14,
+            "nombre": "Petit gateau de chocolate y naranja con crema chantilly y lajas de chocolate",
+            "precio": 18000,
+            "source": "./img/productos/postres/14.jpg",
+            "taken": false
+        },
+        {
+            "id": 15,
+            "nombre": "Arrollado de macha con crema chantilly, gelificado de arándanos y merengue italiano",
+            "precio": 21000,
+            "source": "./img/productos/postres/15.jpg",
+            "taken": false
+        },
+        {
+            "id": 16,
+            "nombre": "Eclair de maracuyá y chocolate blanco",
+            "precio": 25000,
+            "source": "./img/productos/postres/16(1).jpg",
+            "taken": false
+        },
+        {
+            "id": 17,
+            "nombre": "Eclair de Ferrero Rocher",
+            "precio": 25000,
+            "source": "./img/productos/postres/17(1).jpg",
+            "taken": false
+        },
+        {
+            "id": 18,
+            "nombre": "Eclair de Key Pie",
+            "precio": 25000,
+            "source": "./img/productos/postres/18(1).jpg",
+            "taken": false
+        },
+        {
+            "id": 19,
+            "nombre": "Torta desnuda de frutilla con crema y arándanos",
+            "precio": 30000,
+            "source": "./img/productos/postres/19.jpg",
+            "taken": false
+        },
+        {
+            "id": 20,
+            "nombre": "Torta con bizcochuelo de chocolate, relleno a elección",
+            "precio": 40000,
+            "source": "./img/productos/postres/20.jpg",
+            "taken": false
+        },
+        {
+            "id": 21,
+            "nombre": "Flan con dulce de leche",
+            "precio": 20000,
+            "source": "./img/productos/postres/21.jpg",
+            "taken": false
+        }
+    ]
+}
