@@ -1,407 +1,376 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-      crossorigin="anonymous"
-    />
 
-    <link rel="shortcut icon" href="./img/logo/logo.ico" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/productos_style.css" />
-    
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
 
-    <title>Productos - Tienda Sweet Moon</title>
-  </head>
+  <link rel="shortcut icon" href=".../img/logo/logo.ico" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/productos_style.css" />
 
-  <body>
-    <!--Inicio Header -->
-    <div class="topnav" id="myTopnav">
-      <a href="" class="logo active"
-        ><img src="./img/logo/logo.png" alt="logo"
-      /></a>
-      <a href="./index.html" class="active">
-        <h1>Sweet Moon</h1>
+
+  <title>Productos - Tienda Sweet Moon</title>
+</head>
+
+<body>
+  <!--Inicio Header -->
+  <div class="topnav" id="myTopnav">
+    <a href="" class="logo active"><img src=".../img/logo/logo.png" alt="logo" /></a>
+    <a href="../index.html" class="active">
+      <h1>Sweet Moon</h1>
+    </a>
+    <div class="menu-items">
+      <a href="../index.html" class="active">Home</a>
+      <a href="./aboutme.html">Sobre Sweet</a>
+      <a href="./productos.html">Productos</a>
+      <a href="./Contacto.html">Contacto</a>
+      <a id="pedido" class="carrito_pedido" href="#">
+        <img class="carrito_img" src=".../img/productos/carrito/carro_blanco_sin_fondo.png"
+          alt=" Icono Carrito de Compras" />
+        <span id="contador">_</span>
       </a>
-      <div class="menu-items">
-        <a href="./index.html" class="active">Home</a>
-        <a href="./aboutme.html">Sobre Sweet</a>
-        <a href="./productos.html">Productos</a>
-        <a href="./Contacto.html">Contacto</a>
-        <a id="pedido" class="carrito_pedido" href="#">
-          <img
-            class="carrito_img"
-            src="./img/productos/carrito/carro_blanco_sin_fondo.png"
-            alt=" Icono Carrito de Compras"
-          />
-          <span id="contador">_</span>
-        </a>
-        <!-- <i class="fa fa-shopping-cart" aria-hidden="true" title="Carrito"></i>-->
-      </div>
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa fa-bars"></i>
-      </a>
+      <!-- <i class="fa fa-shopping-cart" aria-hidden="true" title="Carrito"></i>-->
     </div>
-    <!-- Fin Header-->
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+  <!-- Fin Header-->
 
-    <!-- Boton de Ir Arriba -->
-    <button onclick="irArriba()" id="myBtn" title="Arriba">
-      <i class="fa fa-arrow-circle-up" aria-hidden="true"></i>
-    </button>
-    <!-- Fin Boton de Ir Arriba -->
+  <!-- Boton de Ir Arriba -->
+  <button onclick="irArriba()" id="myBtn" title="Arriba">
+    <i class="fa fa-arrow-circle-up" aria-hidden="true"></i>
+  </button>
+  <!-- Fin Boton de Ir Arriba -->
 
-    <!-- Inicio Grilla de Productos -->
-    <div class="container-items">
-      <div class="item">
-        <figure>
-          <img
-            src="./img/productos/postres/1.jpg"
-            alt="Macarons de frutilla"  id="product-1"
-          />
-        </figure>
-        <div id="card-container"></div>
-        <div class="info-product">
-          <h2>Macarons de frutilla</h2>
-          <p class="price">$ 10000</p>
-          <button class="button add-product" type="button">
-            Añadir al carrito
-          </button>
-        </div>
+  <!-- Inicio Grilla de Productos -->
+  <div class="container-items">
+    <div class="item">
+      <figure>
+        <img src=".../img/productos/postres/1.jpg" alt="Macarons de frutilla" id="product-1" />
+      </figure>
+      <div id="card-container"></div>
+      <div class="info-product">
+        <h2>Macarons de frutilla</h2>
+        <p class="price">$ 10000</p>
+        <button class="button add-product" type="button">
+          Añadir al carrito
+        </button>
       </div>
-      <div class="item">
-        <figure>
-          <img src="./img/productos/postres/2.jpg" alt="Pavlova" id="product-2">
-        </figure>
-        <div class="info-product">
-          <h2>Pavlova</h2>
-          <p class="price">$ 20000</p>
-          <button class="button add-product" type="button">
-            Añadir al carrito
-          </button>
-        </div>
+    </div>
+    <div class="item">
+      <figure>
+        <img src=".../img/productos/postres/2.jpg" alt="Pavlova" id="product-2">
+      </figure>
+      <div class="info-product">
+        <h2>Pavlova</h2>
+        <p class="price">$ 20000</p>
+        <button class="button add-product" type="button">
+          Añadir al carrito
+        </button>
       </div>
-      <div class="item">
-        <figure>
-          <img src="./img/productos/postres/3.jpg" alt="Sabayón de oporto" id="product-3">
-        </figure>
-        <div class="info-product">
-          <h2>Sabayón de oporto</h2>
-          <p class="price">$ 10000</p>
-          <button class="button add-product" type="button">
-            Añadir al carrito
-          </button>
-        </div>
+    </div>
+    <div class="item">
+      <figure>
+        <img src=".../img/productos/postres/3.jpg" alt="Sabayón de oporto" id="product-3">
+      </figure>
+      <div class="info-product">
+        <h2>Sabayón de oporto</h2>
+        <p class="price">$ 10000</p>
+        <button class="button add-product" type="button">
+          Añadir al carrito
+        </button>
       </div>
-      <div class="item">
-        <figure>
-          <img src="./img/productos/postres/4.jpg" alt="Torta brownie" id="product-4">
-        </figure>
-        <div class="info-product">
-          <h2>Torta brownie</h2>
-          <p class="price">$ 40000</p>
-          <button class="button add-product" type="button">
-            Añadir al carrito
-          </button>
-        </div>
+    </div>
+    <div class="item">
+      <figure>
+        <img src=".../img/productos/postres/4.jpg" alt="Torta brownie" id="product-4">
+      </figure>
+      <div class="info-product">
+        <h2>Torta brownie</h2>
+        <p class="price">$ 40000</p>
+        <button class="button add-product" type="button">
+          Añadir al carrito
+        </button>
       </div>
-      <div class="item">
-        <figure>
-          <img src="./img/productos/postres/5(1).jpg" alt="Volcán de chocolate" id="product-5">
-        </figure>
-        <div class="info-product">
-          <h2>Volcán de chocolate</h2>
-          <p class="price">$ 30000</p>
-          <button class="button add-product" type="button">
-            Añadir al carrito
-          </button>
-        </div>
+    </div>
+    <div class="item">
+      <figure>
+        <img src=".../img/productos/postres/5(1).jpg" alt="Volcán de chocolate" id="product-5">
+      </figure>
+      <div class="info-product">
+        <h2>Volcán de chocolate</h2>
+        <p class="price">$ 30000</p>
+        <button class="button add-product" type="button">
+          Añadir al carrito
+        </button>
       </div>
-      <div class="item">
-        <figure>
-          <img src="./img/productos/postres/8.jpg" alt="Panna Cota" id="product-6">
-        </figure>
-        <div class="info-product">
-          <h2>Panna Cota</h2>
-          <p class="price">$ 20000</p>
-          <button class="button add-product" type="button">
-            Añadir al carrito
-          </button>
-        </div>
+    </div>
+    <div class="item">
+      <figure>
+        <img src="../img/productos/postres/8.jpg" alt="Panna Cota" id="product-6">
+      </figure>
+      <div class="info-product">
+        <h2>Panna Cota</h2>
+        <p class="price">$ 20000</p>
+        <button class="button add-product" type="button">
+          Añadir al carrito
+        </button>
       </div>
-      <div class="item">
-        <figure>
-          <img src="./img/productos/postres/7.jpg" alt="Carrot cake" id="product-7">
-        </figure>
-        <div class="info-product">
-          <h2>Carrot cake</h2>
-          <p class="price">$ 8000</p>
-          <button class="button add-product" type="button">
-            Añadir al carrito
-          </button>
-        </div>
+    </div>
+    <div class="item">
+      <figure>
+        <img src="../img/productos/postres/7.jpg" alt="Carrot cake" id="product-7">
+      </figure>
+      <div class="info-product">
+        <h2>Carrot cake</h2>
+        <p class="price">$ 8000</p>
+        <button class="button add-product" type="button">
+          Añadir al carrito
+        </button>
       </div>
-      <div class="item">
-        <figure>
-          <img src="./img/productos/postres/9.jpg" alt="CheeseCake frutos rojos" id="product-8">
-        </figure>
-        <div class="info-product">
-          <h2>CheeseCake frutos rojos</h2>
-          <p class="price">$ 40000</p>
-          <button class="button add-product" type="button">
-            Añadir al carrito
-          </button>
-        </div>
+    </div>
+    <div class="item">
+      <figure>
+        <img src="../img/productos/postres/9.jpg" alt="CheeseCake frutos rojos" id="product-8">
+      </figure>
+      <div class="info-product">
+        <h2>CheeseCake frutos rojos</h2>
+        <p class="price">$ 40000</p>
+        <button class="button add-product" type="button">
+          Añadir al carrito
+        </button>
       </div>
-      <div class="item">
-        <figure>
-          <img src="./img/productos/postres/10.jpg" alt="Torta de masa sablée -
+    </div>
+    <div class="item">
+      <figure>
+        <img src="../img/productos/postres/10.jpg" alt="Torta de masa sablée -
           número " id="product-9">
-        </figure>
-        <div class="info-product">
-          <h2>Torta de masa sablée - número</h2>
-          <p class="price">$ 10000</p>
-          <button class="button add-product" type="button">
-            Añadir al carrito
-          </button>
-        </div>
-      </div>
-      <div class="item">
-        <figure>
-          <img src="./img/productos/postres/11.jpg" alt="Baba au rhum con crema" id="product-10"
-          >
-        </figure>
-        <div class="info-product">
-          <h2>Baba au rhum con crema</h2>
-          <p class="price">$ 8000</p>
-          <button class="button add-product" type="button">
-            Añadir al carrito
-          </button>
-        </div>
-      </div>
-      <div class="item">
-        <figure>
-          <img src="./img/productos/postres/12.jpg" alt="Bavaroise de chocolate
-          blanco" id="product-11">
-        </figure>
-        <div class="info-product">
-          <h2>Bavaroise de chocolate blanco</h2>
-          <p class="price">$ 10000</p>
-          <button class="button add-product" type="button">
-            Añadir al carrito
-          </button>
-        </div>
-      </div>
-      <div class="item">
-        <figure>
-          <img src="./img/productos/postres/13.jpg" alt="Pera al vino tinto" id="product-12">
-        </figure>
-        <div class="info-product">
-          <h2>Pera al vino tinto</h2>
-          <p class="price">$ 8000</p>
-          <button class="button add-product" type="button">
-            Añadir al carrito
-          </button>
-        </div>
-      </div>
-      <div class="item">
-        <figure>
-          <img src="./img/productos/postres/14.jpg" alt="Petit gateau de
-          chocolate y naranja" id="product-13">
-        </figure>
-        <div class="info-product">
-          <h2>Petit gateau de chocolate y naranja</h2>
-          <p class="price">$ 9000</p>
-          <button class="button add-product" type="button">
-            Añadir al carrito
-          </button>
-        </div>
-      </div>
-      <div class="item">
-        <figure>
-          <img src="./img/productos/postres/15.jpg" alt="Arrollado de macha" id="product-14">
-        </figure>
-        <div class="info-product">
-          <h2>Arrollado de macha</h2>
-          <p class="price">$ 7500</p>
-          <button class="button add-product" type="button">
-            Añadir al carrito
-          </button>
-        </div>
-      </div>
-      <div class="item">
-        <figure>
-          <img src="./img/productos/postres/16(1).jpg" alt="Eclair de maracuyá y
-          chocolate blanco" id="product-15">
-        </figure>
-        <div class="info-product">
-          <h2>Eclair de maracuyá y chocolate blanco</h2>
-          <p class="price">$ 40000</p>
-          <button class="button add-product" type="button">
-            Añadir al carrito
-          </button>
-        </div>
-      </div>
-      <div class="item">
-        <figure>
-          <img src="./img/productos/postres/17(1).jpg" alt="Eclair de ferrero
-          rocher" id="product-16">
-        </figure>
-        <div class="info-product">
-          <h2>Eclair de ferrero rocher</h2>
-          <p class="price">$ 40000</p>
-          <button class="button add-product" type="button">
-            Añadir al carrito
-          </button>
-        </div>
-      </div>
-      <div class="item">
-        <figure>
-          <img src="./img/productos/postres/18(1).jpg" alt="Eclair de key pie"
-          id="product-17">
-        </figure>
-        <div class="info-product">
-          <h2>Eclair de key pie</h2>
-          <p class="price">$ 40000</p>
-          <button class="button add-product" type="button">
-            Añadir al carrito
-          </button>
-        </div>
-      </div>
-      <div class="item">
-        <figure>
-          <img src="./img/productos/postres/19.jpg" alt="Torta desnuda de
-          frutilla" id="product-18">
-        </figure>
-        <div class="info-product">
-          <h2>Torta desnuda de frutilla</h2>
-          <p class="price">$ 20000</p>
-          <button class="button add-product" type="button">
-            Añadir al carrito
-          </button>
-        </div>
-      </div>
-      <div class="item">
-        <figure>
-          <img src="./img/productos/postres/20.jpg" alt="Torta con bizcochuelo
-          de chocolate" id="product-19">
-        </figure>
-        <div class="info-product">
-          <h2>Torta con bizcochuelo de chocolate</h2>
-          <p class="price">$ 15000</p>
-          <button class="button add-product" type="button">
-            Añadir al carrito
-          </button>
-        </div>
-      </div>
-      <div class="item">
-        <figure>
-          <img src="./img/productos/postres/21.jpg" alt="Flan con crema y dulce
-          de leche" id="product-20">
-        </figure>
-        <div class="info-product">
-          <h2>Flan con crema y dulce de leche</h2>
-          <p class="price">$ 10000</p>
-          <button class="button add-product" type="button">
-            Añadir al carrito
-          </button>
-        </div>
+      </figure>
+      <div class="info-product">
+        <h2>Torta de masa sablée - número</h2>
+        <p class="price">$ 10000</p>
+        <button class="button add-product" type="button">
+          Añadir al carrito
+        </button>
       </div>
     </div>
-    <!-- Fin Grilla de Productos  -->
-    <!-- Emergente // Modal -->
-    <dialog id="modal">
-      <h2>Producto Añadido</h2>
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        height="50"
-        width="50"
-        viewBox="0 0 512 512"
-      >
-        <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-        <path
-          fill="#63E6BE"
-          d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-111 111-47-47c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l64 64c9.4 9.4 24.6 9.4 33.9 0L369 209z"
-        />
-      </svg>
-      <p><span>El producto ha sido añadido correctamente al carrito</span></p>
-      <p>
-        <em
-          >Vaya al botón en la parte superior derecha o al menú desplegable</em
-        >
-      </p>
-      <p><em>para revisar su carrito.</em></p>
-      <button id="btn-cerrar-modal" type="button">Continuar</button>
-    </dialog>
+    <div class="item">
+      <figure>
+        <img src="../img/productos/postres/11.jpg" alt="Baba au rhum con crema" id="product-10">
+      </figure>
+      <div class="info-product">
+        <h2>Baba au rhum con crema</h2>
+        <p class="price">$ 8000</p>
+        <button class="button add-product" type="button">
+          Añadir al carrito
+        </button>
+      </div>
+    </div>
+    <div class="item">
+      <figure>
+        <img src="../img/productos/postres/12.jpg" alt="Bavaroise de chocolate
+          blanco" id="product-11">
+      </figure>
+      <div class="info-product">
+        <h2>Bavaroise de chocolate blanco</h2>
+        <p class="price">$ 10000</p>
+        <button class="button add-product" type="button">
+          Añadir al carrito
+        </button>
+      </div>
+    </div>
+    <div class="item">
+      <figure>
+        <img src="../img/productos/postres/13.jpg" alt="Pera al vino tinto" id="product-12">
+      </figure>
+      <div class="info-product">
+        <h2>Pera al vino tinto</h2>
+        <p class="price">$ 8000</p>
+        <button class="button add-product" type="button">
+          Añadir al carrito
+        </button>
+      </div>
+    </div>
+    <div class="item">
+      <figure>
+        <img src="../img/productos/postres/14.jpg" alt="Petit gateau de
+          chocolate y naranja" id="product-13">
+      </figure>
+      <div class="info-product">
+        <h2>Petit gateau de chocolate y naranja</h2>
+        <p class="price">$ 9000</p>
+        <button class="button add-product" type="button">
+          Añadir al carrito
+        </button>
+      </div>
+    </div>
+    <div class="item">
+      <figure>
+        <img src="../img/productos/postres/15.jpg" alt="Arrollado de macha" id="product-14">
+      </figure>
+      <div class="info-product">
+        <h2>Arrollado de macha</h2>
+        <p class="price">$ 7500</p>
+        <button class="button add-product" type="button">
+          Añadir al carrito
+        </button>
+      </div>
+    </div>
+    <div class="item">
+      <figure>
+        <img src="../img/productos/postres/16(1).jpg" alt="Eclair de maracuyá y
+          chocolate blanco" id="product-15">
+      </figure>
+      <div class="info-product">
+        <h2>Eclair de maracuyá y chocolate blanco</h2>
+        <p class="price">$ 40000</p>
+        <button class="button add-product" type="button">
+          Añadir al carrito
+        </button>
+      </div>
+    </div>
+    <div class="item">
+      <figure>
+        <img src="../img/productos/postres/17(1).jpg" alt="Eclair de ferrero
+          rocher" id="product-16">
+      </figure>
+      <div class="info-product">
+        <h2>Eclair de ferrero rocher</h2>
+        <p class="price">$ 40000</p>
+        <button class="button add-product" type="button">
+          Añadir al carrito
+        </button>
+      </div>
+    </div>
+    <div class="item">
+      <figure>
+        <img src="../img/productos/postres/18(1).jpg" alt="Eclair de key pie" id="product-17">
+      </figure>
+      <div class="info-product">
+        <h2>Eclair de key pie</h2>
+        <p class="price">$ 40000</p>
+        <button class="button add-product" type="button">
+          Añadir al carrito
+        </button>
+      </div>
+    </div>
+    <div class="item">
+      <figure>
+        <img src="../img/productos/postres/19.jpg" alt="Torta desnuda de
+          frutilla" id="product-18">
+      </figure>
+      <div class="info-product">
+        <h2>Torta desnuda de frutilla</h2>
+        <p class="price">$ 20000</p>
+        <button class="button add-product" type="button">
+          Añadir al carrito
+        </button>
+      </div>
+    </div>
+    <div class="item">
+      <figure>
+        <img src="../img/productos/postres/20.jpg" alt="Torta con bizcochuelo
+          de chocolate" id="product-19">
+      </figure>
+      <div class="info-product">
+        <h2>Torta con bizcochuelo de chocolate</h2>
+        <p class="price">$ 15000</p>
+        <button class="button add-product" type="button">
+          Añadir al carrito
+        </button>
+      </div>
+    </div>
+    <div class="item">
+      <figure>
+        <img src="../img/productos/postres/21.jpg" alt="Flan con crema y dulce
+          de leche" id="product-20">
+      </figure>
+      <div class="info-product">
+        <h2>Flan con crema y dulce de leche</h2>
+        <p class="price">$ 10000</p>
+        <button class="button add-product" type="button">
+          Añadir al carrito
+        </button>
+      </div>
+    </div>
+  </div>
+  <!-- Fin Grilla de Productos  -->
+  <!-- Emergente // Modal -->
+  <dialog id="modal">
+    <h2>Producto Añadido</h2>
+    <svg xmlns="http://www.w3.org/2000/svg" height="50" width="50" viewBox="0 0 512 512">
+      <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+      <path fill="#63E6BE"
+        d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-111 111-47-47c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l64 64c9.4 9.4 24.6 9.4 33.9 0L369 209z" />
+    </svg>
+    <p><span>El producto ha sido añadido correctamente al carrito</span></p>
+    <p>
+      <em>Vaya al botón en la parte superior derecha o al menú desplegable</em>
+    </p>
+    <p><em>para revisar su carrito.</em></p>
+    <button id="btn-cerrar-modal" type="button">Continuar</button>
+  </dialog>
 
-    <!-- fin Emergente -->
+  <!-- fin Emergente -->
 
-    <!-- Inicio Footer -->
+  <!-- Inicio Footer -->
 
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="footer_nav">
-              <ul class="main_menu_footer">
-                <li style="margin-right: 11px !important">
-                  <a href="./index.html">Home</a>
-                </li>
-                <li style="margin-right: 11px !important">
-                  <a href="./aboutme.html">Sobre Sweet</a>
-                </li>
-                <li style="margin-right: 11px !important">
-                  <a href="./productos.html">Productos</a>
-                </li>
-                <li style="margin-right: 11px !important">
-                  <a href="./Contacto.html">Contacto</a>
-                </li>
-              </ul>
-              <div class="social">
-                <a
-                  href="https://www.instagram.com/sweetmoon_cake2/"
-                  target="_blank"
-                  ><i class="fab fa-instagram"></i
-                ></a>
-                <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
-                <a href="#" target="_blank"><i class="fab fa-whatsapp"></i></a>
-              </div>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="footer_nav">
+            <ul class="main_menu_footer">
+              <li style="margin-right: 11px !important">
+                <a href="../index.html">Home</a>
+              </li>
+              <li style="margin-right: 11px !important">
+                <a href="./aboutme.html">Sobre Sweet</a>
+              </li>
+              <li style="margin-right: 11px !important">
+                <a href="./productos.html">Productos</a>
+              </li>
+              <li style="margin-right: 11px !important">
+                <a href="./Contacto.html">Contacto</a>
+              </li>
+            </ul>
+            <div class="social">
+              <a href="https://www.instagram.com/sweetmoon_cake2/" target="_blank"><i class="fab fa-instagram"></i></a>
+              <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+              <a href="#" target="_blank"><i class="fab fa-whatsapp"></i></a>
             </div>
-            <div class="copyright-box">
-              <p class="copyright">© Codo a Codo 2024</p>
-            </div>
+          </div>
+          <div class="copyright-box">
+            <p class="copyright">© Codo a Codo 2024</p>
           </div>
         </div>
       </div>
-    </footer>
+    </div>
+  </footer>
 
-    <!-- Fin  footer-->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-    <script src="./js/main.js"></script>
-    <!-- <script src="./js/prueba.js" defer></script> -->
-     <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            document.querySelectorAll('img[id^="product-"]').forEach(img => {
-                img.addEventListener('click', function() {
-                    const id = this.id.split('-')[1]; // Obtener el ID del producto a partir del ID del elemento
-                    // Redirigir a la página de detalle con el ID del producto como parámetro en la URL
-                    window.location.href = `detalle.html?id=${id}`;
-                });
-            });
+  <!-- Fin  footer-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="../js/main.js"></script>
+  <!-- <script src="./js/prueba.js" defer></script> -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      document.querySelectorAll('img[id^="product-"]').forEach(img => {
+        img.addEventListener('click', function () {
+          const id = this.id.split('-')[1]; // Obtener el ID del producto a partir del ID del elemento
+          // Redirigir a la página de detalle con el ID del producto como parámetro en la URL
+          window.location.href = `detalle.html?id=${id}`;
         });
-    </script>
-  </body>
+      });
+    });
+  </script>
+</body>
+
 </html>
