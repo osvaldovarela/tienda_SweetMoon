@@ -84,8 +84,7 @@
 }
 
 .info-product h2 {
-    font-size: calc(1.5vw + 10px);
-    max-width: 100%;
+    font-size: 1.125em;
     font-weight: bold;
 }
 
@@ -93,7 +92,7 @@ p.price {
     color: black;
     font-weight: 300;
     padding: .5em;
-    font-size: 1.2em;
+    font-size: 1em;
 }
 
 

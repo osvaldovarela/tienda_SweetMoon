@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -10,18 +10,19 @@
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
 
-    <link rel="shortcut icon" href="./img/logo/logo.ico">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/productos_style.css">
+    <link rel="shortcut icon" href="../img/logo/logo.ico">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/productos_style.css">
+    <link rel="stylesheet" href="../css/pedidos_style.css">
+
     <title>Productos - Tienda Sweet Moon</title>
 </head>
 
 <body>
-    <!-- header -->
     <!--Inicio Header -->
     <div class="topnav" id="myTopnav">
-        <a href="" class="logo active"><img src="./img/logo/logo.png" alt="logo"></a>
-        <a href="./index.html" class="active">
+        <a href="" class="logo active"><img src="../img/logo/logo.png" alt="logo"></a>
+        <a href="../index.html" class="active">
             <h1>Sweet Moon</h1>
         </a>
         <div class="menu-items">
@@ -30,7 +31,7 @@
             <a href="./productos.html">Productos</a>
             <a href="./Contacto.html">Contacto</a>
             <a id="pedido" class="carrito_pedido" href="#">
-                <img class="carrito_img" src="./img/productos/carrito/carro_blanco_sin_fondo.png"
+                <img class="carrito_img" src="../img/productos/carrito/carro_blanco_sin_fondo.png"
                     alt=" Icono Carrito de Compras">
                 <span id="contador">_</span>
             </a>
@@ -41,34 +42,13 @@
         </a>
     </div>
     <!-- Fin Header-->
-    <!-- Boton de Ir Arriba -->
-    <button onclick="irArriba()" id="myBtn" title="Arriba"><i class="fa fa-chevron-up" aria-hidden="true"></i></button>
-    <!-- Fin Boton de Ir Arriba -->
-
-
-    <!-- inicio grilla de productos -->
-    <div class="container-items">
+    <!-- Inicio de pagina pedidos -->
+    <div class="container-pedidos">
 
     </div>
 
+    <!-- Fin pagina pedidos -->
 
-    <!-- Emergente // Modal -->
-    <dialog id="modal">
-        <h2>Producto Añadido</h2>
-        <svg xmlns="http://www.w3.org/2000/svg" height="50" width="50"
-            viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-            <path fill="#63E6BE"
-                d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-111 111-47-47c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l64 64c9.4 9.4 24.6 9.4 33.9 0L369 209z" />
-        </svg>
-        <p><span>El producto ha sido añadido correctamente al carrito</span>
-        </p>
-        <p><em>Vaya al botón en la parte superior derecha o al menú desplegable</em></p>
-        <p><em>para revisar su carrito.</em></p>
-        <button id="btn-cerrar-modal" type="button">Continuar</button>
-    </dialog>
-
-    <!-- fin Emergente -->
-    <!-- footer -->
     <!-- Inicio Footer -->
 
     <footer>
@@ -106,12 +86,11 @@
     </footer>
 
     <!-- Fin  footer-->
-
-    <script src="./js/main.js"></script>
-    <script src="./js/productos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/pedidos.js"></script>
 
 </body>
 
