@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const id = parseInt(urlParams.get("id"));
 
   // URL del archivo JSON local
-  const jsonUrl = "./productos.json";
+  const jsonUrl = "../productos.json";
 
   fetch(jsonUrl)
     .then((response) => {
