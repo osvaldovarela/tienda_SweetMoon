@@ -1,4 +1,4 @@
-# Tienda SweetMoon_backend
+# Tienda SweetMoon
 
 Proyecto Trabajo Grupal - FrontEnd Curso CaC - Grupo 2
 
@@ -7,7 +7,7 @@ Proyecto Trabajo Grupal - FrontEnd Curso CaC - Grupo 2
 Proyecto FrontEnd creado para el Curso FullStack JS/Node.js de Codo a Codo
 1er semestre de 2024
 
-**_ Tienda de Pastelería _**
+*** Tienda de Pastelería ***
 
 ## Despliegue :package:
 
