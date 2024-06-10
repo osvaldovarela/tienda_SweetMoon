@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
         cardContainer.innerHTML = `
                             <div class="card">
                                 <h2>${articulo.nombre || articulo.title}</h2>
-                                <img src="${articulo.source}" alt="${
+                                <img src=".${articulo.source}" alt="${
           articulo.nombre || articulo.title
         }" style="width: 100%;">
                                 <p>Precio: ${articulo.precio}</p>
