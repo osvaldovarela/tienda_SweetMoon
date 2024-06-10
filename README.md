@@ -17,7 +17,7 @@ Proyecto FrontEnd creado para el Curso FullStack JS/Node.js de Codo a Codo
 
 <p>
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=html,css,js,bootstrapp&theme=dark&perline=1" />
+    <img src="https://skillicons.dev/icons?i=html,css,js,bootstrap&theme=dark&perline=1" />
   </a>
 </p>
 
