@@ -315,7 +315,7 @@ main {
 .cardGroup {
   display: flex;
   height: 70%;
-  border: 1px solid #cad0d2;
+  
   border-radius: 4px;
   overflow: hidden;
 }
