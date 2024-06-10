@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+
+    <link rel="shortcut icon" href="./img/logo/logo.ico">
+    <link rel="stylesheet" href="./css/card_detail.css" />
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/detalle_style.css" />
+    <!-- <link rel="stylesheet" href="./css/carrito.css"> -->
+
+    <title>Carrito - Productos </title>
+</head>
+
+<body>
+    <!--Inicio Header -->
+    <div class="topnav" id="myTopnav">
+        <a href="" class="logo active"><img src="./img/logo/logo.png" alt="logo"></a>
+        <a href="./index.html" class="active">
+            <h1>Sweet Moon</h1>
+        </a>
+        <div class="menu-items">
+            <a href="./index.html" class="active">Home</a>
+            <a href="./aboutme.html">Sobre Sweet</a>
+            <a href="./productos.html">Productos</a>
+            <a href="./Contacto.html">Contacto</a>
+            <a id="pedido" href="./carrito.html">Pedido
+                <i class="fa fa-shopping-cart" aria-hidden="true" title="Carrito"></i></a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <!-- Fin Header-->
+    <!-- Inicio contenido principal -->
+
+    <main>
+			<div id="card-container"></div>
+			<div class="container-info-product">
+				
+
+				<div class="container-details-product">
+					<div class="form-group">
+						<label for="colour">Color</label>
+						<select name="colour" id="colour">
+							<option disabled selected value="">
+								Escoge una opción
+							</option>
+							<option value="rojo">Rojo</option>
+							<option value="blanco">Blanco</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<label for="size">Tamaño</label>
+						<select name="size" id="size">
+							<option disabled selected value="">
+								Escoge una opción
+							</option>
+							<option value="chica">chica</option>
+							<option value="grande">grande</option>
+						</select>
+					</div>
+					<button class="btn-clean">Limpiar</button>
+
+          <div class="cuotas"><i class="fa fa-credit-card-alt" aria-hidden="true">
+            <div><br>
+              <p id="nota">Hasta 24 cuotas</p>
+            </div>
+            </i ></div>
+          
+				</div>
+
+				<div class="container-add-cart">
+					<div class="container-quantity">
+						<input
+							type="number"
+							placeholder="1"
+							value="1"
+							min="1"
+							class="input-quantity"
+						/>
+						<div class="btn-increment-decrement">
+							<i class="fa-solid fa-chevron-up" id="increment"></i>
+							<i class="fa-solid fa-chevron-down" id="decrement"></i>
+						</div>
+					</div>
+					<button class="btn-add-to-cart">
+						<i class="fa-solid fa-plus"></i>
+						Añadir al carrito
+					</button>
+				</div>
+
+				<div class="container-description">
+					<div class="title-description">
+						<h4>Descripción</h4>
+						<i class="fa-solid fa-chevron-down"></i>
+					</div>
+					<div class="text-description">
+						<p>
+							Lorem ipsum dolor, sit amet consectetur adipisicing
+							elit. Laboriosam iure provident atque voluptatibus
+							reiciendis quae rerum, maxime placeat enim cupiditate
+							voluptatum, temporibus quis iusto. Enim eum qui delectus
+							deleniti similique? Lorem, ipsum dolor sit amet
+							consectetur adipisicing elit. Sint autem magni earum est
+							dolorem saepe perferendis repellat ipsam laudantium cum
+							assumenda quidem quam, vero similique? Iusto officiis
+							quod blanditiis iste?
+						</p>
+					</div>
+				</div>
+
+				<div class="container-additional-information">
+					<div class="title-additional-information">
+						<h4>Información adicional</h4>
+						<i class="fa-solid fa-chevron-down"></i>
+					</div>
+					<div class="text-additional-information hidden">
+						<p>-----------</p>
+					</div>
+				</div>
+
+				<div class="container-reviews">
+					<div class="title-reviews">
+						<h4>Reseñas</h4>
+						<i class="fa-solid fa-chevron-down"></i>
+					</div>
+					<div class="text-reviews hidden">
+						<p>-----------</p>
+					</div>
+				</div>
+
+				<div class="container-social">
+					<span>Compartir</span>
+					<div class="container-buttons-social">
+						<a href="#"><i class="fa-solid fa-envelope"></i></a>
+						<a href="#"><i class="fa-brands fa-facebook"></i></a>
+						<a href="#"><i class="fa-brands fa-twitter"></i></a>
+						<a href="#"><i class="fa-brands fa-instagram"></i></a>
+						<a href="#"><i class="fa-brands fa-pinterest"></i></a>
+					</div>
+				</div>
+        
+
+			</div>
+      
+
+		</main>
+
+    <div class="cardGroup">
+  <div class="card cardGroup__card">
+    <div class="card__description cardGroup__cardDescription">
+      <div ><i class="fa fa-shopping-bag" aria-hidden="true"></i></div>
+      <div class="card__descriptionText">Retira tu pedido</div>
+    </div>
+    <div class="card__price"></div>
+  </div>
+  <div class="card cardGroup__card">
+    <div class="card__description cardGroup__cardDescription">
+      <div ><i class="fa-solid fa-truck-fast"></i></div>
+      <div class="card__descriptionText">Tambien te lo llevamos</div>
+    </div>
+    <div class="card__price"></div>
+  </div>
+  <div class="card cardGroup__card">
+    <div class="card__description cardGroup__cardDescription">
+      <div ><i class="fa-solid fa-shield"></i></div>
+      <div class="card__descriptionText">Sitio seguro</div>
+    </div>
+    <div class="card__price"></div>
+  </div>
+</div>
+
+		<!-- Inicio Footer -->
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    
+        <p>Comprá segura y protegida con todos los medios de pago. </p>
+        <img src="../img/pay/pay.png" alt="" />
+      </div>
+                    </div>
+                    <div class="copyright-box">
+                        <p class="copyright">© Codo a Codo 2024</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- Fin  footer-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+        <script
+			src="https://kit.fontawesome.com/81581fb069.js"
+			crossorigin="anonymous"
+		></script>
+        <script src="./js/detalle.js" defer></script>
+</body>
+
+</html>
+
