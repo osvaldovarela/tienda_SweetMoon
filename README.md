@@ -1,26 +1,27 @@
-# Tienda_SweetMoon
+# Tienda SweetMoon_backend
 
 Proyecto Trabajo Grupal - FrontEnd Curso CaC - Grupo 2
 
-## Descripción
+## Descripción :notebook_with_decorative_cover:
 
 Proyecto FrontEnd creado para el Curso FullStack JS/Node.js de Codo a Codo
 1er semestre de 2024
 
-Tienda de Pastelería
+**_ Tienda de Pastelería _**
 
-## Despliegue 📦
+## Despliegue :package:
 
-_En proceso de desarrollo_
+[ Tienda SweetMoon ](https://osvaldovarela.github.io/tienda_SweetMoon/)
 
-## Construido Con 🛠️
+## Construido Con :hammer_and_wrench:
 
-- HTML
-- CSS
-- JavaScript
-- Bootstrap
+<p>
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=html,css,js,bootstrapp&theme=dark&perline=1" />
+  </a>
+</p>
 
-## Autores ✒️
+## Autores :black_nib:
 
 - Alicia Zuñega - [@alizunega](https://github.com/alizunega)
 - Jorge Varela - [@osvaldovarela](https://github.com/osvaldovarela)
