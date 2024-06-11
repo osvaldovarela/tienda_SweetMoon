@@ -109,9 +109,13 @@
     crossorigin="anonymous"></script>
 
   <!-- <script src="./js/prueba.js" defer></script> -->
-  <script>
+  <!-- <script>
     document.addEventListener('DOMContentLoaded', () => {
-      document.querySelectorAll('img[id^="product-"]').forEach(img => {
+      console.log("DOM content loaded"); // Diagnóstico
+
+      const images = document.querySelectorAll('.item figure img');
+      console.log(images); // Diagnóstico
+      images.forEach(img => {
         img.addEventListener('click', function () {
           const id = this.id.split('-')[1]; // Obtener el ID del producto a partir del ID del elemento
           // Redirigir a la página de detalle con el ID del producto como parámetro en la URL
@@ -120,7 +124,7 @@
         });
       });
     });
-  </script>
+  </script> -->
 
 </body>
 

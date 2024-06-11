@@ -1,7 +1,9 @@
 document.addEventListener("DOMContentLoaded", () => {
   // Obtener el ID del producto de los parámetros de la URL
   const urlParams = new URLSearchParams(window.location.search);
+
   const id = parseInt(urlParams.get("id"));
+  console.log("el id del html", id);
 
   // URL del archivo JSON local
   const jsonUrl = "../productos.json";
