@@ -80,7 +80,6 @@ fetch("../productos.json")
 window.onload = function () {
   // Seleccionar todas las imágenes dentro de elementos <figure>
   const images = document.querySelectorAll("figure img");
-  console.log(images);
   // Agregar un listener de eventos a cada imagen
   images.forEach((img) => {
     img.addEventListener("click", function () {
@@ -90,20 +89,3 @@ window.onload = function () {
     });
   });
 };
-
-// document.addEventListener("DOMContentLoaded", () => {
-//   console.log("DOM content loaded"); // Diagnóstico
-//   const images = document.querySelectorAll('img[id^="product-"]');
-//   if (images.length == 0) {
-//     console.log("no hay items en la grilla");
-//   }
-//   console.log(images); // Diagnóstico
-//   images.forEach((img) => {
-//     img.addEventListener("click", function () {
-//       const id = this.id.split("-")[1]; // Obtener el ID del producto a partir del ID del elemento
-//       // Redirigir a la página de detalle con el ID del producto como parámetro en la URL
-//       console.log(id);
-//       window.location.href = `detalle.html?id=${id}`;
-//     });
-//   });
-// });
