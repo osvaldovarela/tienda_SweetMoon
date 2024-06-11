@@ -74,18 +74,16 @@ fetch("../productos.json")
       window.modal.close();
     });
     // fin funcion para mostrar el modal al presionar el boton añadir
+    // Seleccionar todas las imágenes dentro de elementos <figure>
+    const images = document.querySelectorAll("figure img");
+    // Agregar un listener de eventos a cada imagen
+    images.forEach((img) => {
+      img.addEventListener("click", function () {
+        const id = this.id.split("-")[1]; // Obtener el ID del producto a partir del ID del <figure> padre
+        console.log(id);
+        window.location.href = `detalle.html?id=${id}`; // Redirigir a la página de detalle
+      });
+    });
+    // Fin de la función para mostrar el modal al presionar el botón añadir
   })
   .catch((error) => console.error("Error al cargar el JSON:", error));
-
-window.onload = function () {
-  // Seleccionar todas las imágenes dentro de elementos <figure>
-  const images = document.querySelectorAll("figure img");
-  // Agregar un listener de eventos a cada imagen
-  images.forEach((img) => {
-    img.addEventListener("click", function () {
-      const id = this.id.split("-")[1]; // Obtener el ID del producto a partir del ID del <figure> padre
-      console.log(id);
-      window.location.href = `detalle.html?id=${id}`; // Redirigir a la página de detalle
-    });
-  });
-};
