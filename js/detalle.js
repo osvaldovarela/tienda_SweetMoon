@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
                                 <img src=".${articulo.source}" alt="${
           articulo.nombre || articulo.title
         }" style="width: 100%;">
-                                <p>Precio: ${articulo.precio}</p>
+                                <p class=price>Precio: ${articulo.precio}</p>
                             </div>
                         `;
       } else {
