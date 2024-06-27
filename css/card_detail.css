@@ -1,42 +1,70 @@
-/* Productos home*/
-#card-container{
+/* Estilos base */
+
+
+.card {
   display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-justify-content: center;}
-
-.card{
-  background-color: var(--color-acento-claro);
+  flex-direction: column;
+  align-items: center;
   text-align: center;
-  padding: 10px;
-  max-width: 400px;
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
-  transition: 200ms;
-  margin-top: 30px;
+  background-color: rgba(252, 245, 229, 1);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 90%; /* Ajuste inicial para dispositivos móviles */
+  max-width: 300px; /* Máximo ancho de la tarjeta */
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 10px; /* Agrega un margen para evitar que las tarjetas se toquen */
 }
 
-.card:hover{
-  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
-  translate: 0px -5px;
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
-.card img{
-  width:auto;
-  height:140px ;
-  aspect-ratio: 1;
+.card img {
+  width: 100%; /* Hace que la imagen se ajuste al ancho del contenedor */
+  height: auto; /* Mantiene la proporción de la imagen */
+  aspect-ratio: auto; /* Se ajusta automáticamente basado en las dimensiones de la imagen */
+  max-width: 100%; /* Limita el ancho máximo de la imagen al ancho del contenedor */
+  max-height: 100%; /* Limita la altura máxima de la imagen a la altura del contenedor */
 }
 
-p{
+p {
   font-weight: 600;
+  margin: 10px 0;
 }
 
-.card button{
+.card button {
   font-size: normal;
-  background-color: var(--color-acento);
+  background-color: rgba(252, 245, 229, 1);
   border-radius: 5px;
   padding: 5px 10px;
   color: white;
-  border:unset;
-  cursor:pointer;
+  border: unset;
+  cursor: pointer;
+}
+
+/* Estilos para pantallas de tabletas */
+@media (min-width: 768px) {
+  #card-container {
+    gap: 20px; /* Aumenta el espacio entre tarjetas */
+  }
+
+  .card {
+    width: calc(
+      50% - 20px
+    ); /* Ajusta dos tarjetas por fila con el espacio del gap */
+  }
+}
+
+/* Estilos para pantallas de escritorio */
+@media (min-width: 1024px) {
+  #card-container {
+    gap: 30px; /* Aumenta aún más el espacio entre tarjetas */
+  }
+
+  .card {
+    width: calc(
+      33.333% - 30px
+    ); /* Ajusta tres tarjetas por fila con el espacio del gap */
+  }
 }
