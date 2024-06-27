@@ -9,11 +9,11 @@
   background-color: rgba(252, 245, 229, 1);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
-  width: 90%; /* Ajuste inicial para dispositivos móviles */
-  max-width: 300px; /* Máximo ancho de la tarjeta */
+  width: 90%;
+  max-width: 300px;
   border-radius: 10px;
   overflow: hidden;
-  margin: 10px; /* Agrega un margen para evitar que las tarjetas se toquen */
+  margin: 10px; /
 }
 
 .card:hover {
@@ -21,16 +21,11 @@
 }
 
 .card img {
-  width: 100%; /* Hace que la imagen se ajuste al ancho del contenedor */
-  height: auto; /* Mantiene la proporción de la imagen */
-  aspect-ratio: auto; /* Se ajusta automáticamente basado en las dimensiones de la imagen */
-  max-width: 100%; /* Limita el ancho máximo de la imagen al ancho del contenedor */
-  max-height: 100%; /* Limita la altura máxima de la imagen a la altura del contenedor */
-}
-
-p {
-  font-weight: 600;
-  margin: 10px 0;
+  width: 100%;
+  height: auto;
+  aspect-ratio: auto;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .card button {
@@ -46,25 +41,25 @@ p {
 /* Estilos para pantallas de tabletas */
 @media (min-width: 768px) {
   #card-container {
-    gap: 20px; /* Aumenta el espacio entre tarjetas */
+    gap: 20px;
   }
 
   .card {
     width: calc(
       50% - 20px
-    ); /* Ajusta dos tarjetas por fila con el espacio del gap */
+    );
   }
 }
 
 /* Estilos para pantallas de escritorio */
 @media (min-width: 1024px) {
   #card-container {
-    gap: 30px; /* Aumenta aún más el espacio entre tarjetas */
+    gap: 30px;
   }
 
   .card {
     width: calc(
       33.333% - 30px
-    ); /* Ajusta tres tarjetas por fila con el espacio del gap */
+    );
   }
 }

@@ -74,15 +74,39 @@ main {
   color: #1bbeb4;
 }
 
+.container-credit-main {
+  display: flex;
+  gap: 20px;
+  padding-bottom: 10px;
+  margin-top: 30px;
+}
+
+.container-credit-card {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  text-align: center;
+}
+
+#nota  {
+  margin: 10px 0 ;
+}
+
+
+
 .container-add-cart {
   display: flex;
   gap: 20px;
   padding-bottom: 30px;
   border-bottom: 1px solid #e4e4e4;
+  
 }
 
 .container-quantity {
   position: relative;
+  
 }
 
 .input-quantity {
@@ -98,6 +122,7 @@ main {
 
 .input-quantity:focus {
   outline: none;
+  
 }
 
 .input-quantity::-webkit-inner-spin-button,
@@ -126,7 +151,7 @@ main {
 
 .fa-chevron-up:hover {
   color: #1bbeb4;
-}
+} 
 
 .btn-add-to-cart {
   border: none;
@@ -269,15 +294,12 @@ main {
   color: #1bbeb4;
 }
 
-/* footer {
-	padding: 30px;
-	background-color: #eee;
-	margin-top: 50px;
-	color: #222;
-} */
-
-.fa-credit-card-alt {
+.container-pagos {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
   color: black;
-  margin-right: 10px;
+  text-align: center;
 }
 
