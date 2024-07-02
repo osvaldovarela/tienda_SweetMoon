@@ -5,32 +5,24 @@ document.addEventListener("DOMContentLoaded", () => {
   const id = parseInt(urlParams.get("id"));
   console.log("el id del html", id);
 
-  // URL del archivo JSON local
-  const jsonUrl = "../productos.json";
-
-  fetch(jsonUrl)
+  fetch("https://sweet-moon-backend.vercel.app/productos")
     .then((response) => {
       if (!response.ok) {
-        throw new Error("Network response was not ok");
+        throw new Error(`HTTP error! status: ${response.status}`);
       }
       return response.json();
     })
     .then((data) => {
-      console.log("JSON loaded:", data);
-
-      if (!Array.isArray(data.productos)) {
-        throw new Error("Expected an array");
-      }
-
+      //console.log("productos", data);
       // Encontrar el producto correspondiente
-      const articulo = data.productos.find((articulo) => articulo.id === id);
+      const articulo = data.find((articulo) => articulo.id === id);
 
       if (articulo) {
         const cardContainer = document.getElementById("card-container");
         cardContainer.innerHTML = `
                             <div class="card">
                                 <h2>${articulo.nombre || articulo.title}</h2>
-                                <img src=".${articulo.source}" alt="${
+                                <img src="${articulo.urlfoto}" alt="${
           articulo.nombre || articulo.title
         }" style="width: 100%;">
                                 <p class=price>Precio: ${articulo.precio}</p>
@@ -41,6 +33,10 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     })
     .catch((error) => {
-      console.error("Error al cargar el JSON:", error);
+      if (error.name === "TypeError") {
+        console.error("Problema al realizar el fetch: ", error.message);
+      } else {
+        console.error("Error inesperado: ", error);
+      }
     });
 });
