@@ -1,13 +1,21 @@
-fetch("../productos.json")
-  .then((response) => response.json())
+fetch("https://sweet-moon-backend.vercel.app/productos")
+  .then((response) => {
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    return response.json();
+  })
   .then((data) => {
+    //console.log(data);
+
     /*  creacion de la grilla de productos 
     trayendo los elementos de un json
 */
     const divContenedor = document.querySelector(".container-items");
 
     /*    guardo la info del json en una constante    */
-    const productos = data.productos;
+    const productos = data;
+    //console.log(productos);
 
     for (let i = 0; i < productos.length; i++) {
       const producto = productos[i];
@@ -35,7 +43,7 @@ fetch("../productos.json")
       /*    asignamos los valores a los elementos    */
       nombre.textContent = producto.nombre;
       pprice.textContent = "$ " + producto.precio;
-      img.src = `.${producto.source}`;
+      img.src = `${producto.urlfoto}`;
       img.alt = producto.nombre;
       img.setAttribute("id", `product-${producto.id}`);
 
@@ -86,4 +94,10 @@ fetch("../productos.json")
     });
     // Fin de la función para mostrar el modal al presionar el botón añadir
   })
-  .catch((error) => console.error("Error al cargar el JSON:", error));
+  .catch((error) => {
+    if (error.name === "TypeError") {
+      console.error("Problema al realizar el fetch: ", error.message);
+    } else {
+      console.error("Error inesperado: ", error);
+    }
+  });
